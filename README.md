@@ -1,3 +1,10 @@
+# HOWTO BUILD
+You will need to have zipalign installed.
+To install zipalign run: "sudo apt install zipalign"
+
+Then run ./build.sh
+The script will build, sign and zipalign the apk, the final apk will be placed in the root of the source directory
+
 # Phonograph
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/kabouzeid/Phonograph/blob/master/LICENSE.txt)
 
