@@ -37,7 +37,7 @@ import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.kabouzeid.gramophone.util.PhonographColorUtil;
 import com.kabouzeid.gramophone.util.PlaylistsUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 import java.util.List;

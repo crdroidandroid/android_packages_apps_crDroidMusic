@@ -30,7 +30,7 @@ import com.kabouzeid.gramophone.util.PhonographColorUtil;
 
 import org.jaudiotagger.tag.FieldKey;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 import java.util.EnumMap;

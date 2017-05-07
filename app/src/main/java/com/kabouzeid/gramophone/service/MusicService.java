@@ -60,7 +60,7 @@ import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

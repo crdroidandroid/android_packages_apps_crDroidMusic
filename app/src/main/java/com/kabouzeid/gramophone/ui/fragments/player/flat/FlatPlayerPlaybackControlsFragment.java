@@ -25,7 +25,7 @@ import com.kabouzeid.gramophone.ui.fragments.AbsMusicServiceFragment;
 import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.views.PlayPauseDrawable;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.Collection;
 import java.util.LinkedList;

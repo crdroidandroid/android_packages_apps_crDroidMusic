@@ -19,7 +19,7 @@ import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 import com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import de.psdev.licensesdialog.LicensesDialog;
 

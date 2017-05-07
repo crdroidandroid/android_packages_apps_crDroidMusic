@@ -225,7 +225,7 @@
   <string name="pref_title_now_playing_screen_appearance">外观</string>
   <string name="intro_label">介绍页</string>
   <string name="press_back_again_to_exit_intro">再次点击后退键可跳过介绍页。</string>
-  <string name="welcome_to_phonograph">"欢迎使用 Phonohraph ，这是一款精致且简洁的 Android 音乐播放器。 "</string>
+  <string name="welcome_to_phonograph">"欢迎使用 crDroid Music ，这是一款精致且简洁的 Android 音乐播放器。 "</string>
   <string name="open_playing_queue_instruction">上滑正在播放界面内的卡片即可展开播放队列。</string>
   <string name="rearrange_playing_queue_instruction">通过拖动曲目名前面的序列号来调整播放队列的顺序。</string>
   <string name="library">曲库</string>
@@ -238,9 +238,9 @@
   <string name="could_not_scan_files">%d 个文件无法扫描。</string>
   <string name="listing_files">正在列举文件</string>
   <string name="new_start_directory">%s 是新的初始目录。</string>
-  <string name="app_widget_big_name">Phonograph - 大尺寸</string>
-  <string name="app_widget_classic_name">Phonograph - 经典</string>
-  <string name="app_widget_small_name">Phonograph - 小尺寸</string>
+  <string name="app_widget_big_name">Music - 大尺寸</string>
+  <string name="app_widget_classic_name">Music - 经典</string>
+  <string name="app_widget_small_name">Music - 小尺寸</string>
   <string name="report_an_issue">报告问题</string>
   <string name="bug_report_issue">问题</string>
   <string name="login">登录</string>

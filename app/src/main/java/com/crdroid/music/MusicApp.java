@@ -1,12 +1,12 @@
-package org.omnirom.gramophone;
+package com.crdroid.music;
 
 import android.app.Application;
 import android.os.Build;
 
 import com.kabouzeid.gramophone.appshortcuts.DynamicShortcutManager;
 
-public class OmniApp extends Application {
-    public static final String TAG = OmniApp.class.getSimpleName();
+public class MusicApp extends Application {
+    public static final String TAG = MusicApp.class.getSimpleName();
 
     @Override
     public void onCreate() {

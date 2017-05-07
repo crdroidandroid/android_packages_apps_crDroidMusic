@@ -47,7 +47,7 @@ import com.kabouzeid.gramophone.util.ViewUtil;
 import com.kabouzeid.gramophone.views.WidthFitSquareLayout;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 

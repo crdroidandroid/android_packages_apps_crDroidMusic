@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

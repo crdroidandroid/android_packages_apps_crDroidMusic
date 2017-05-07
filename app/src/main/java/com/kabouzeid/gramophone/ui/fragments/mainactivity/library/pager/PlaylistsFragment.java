@@ -16,7 +16,7 @@ import com.kabouzeid.gramophone.model.smartplaylist.HistoryPlaylist;
 import com.kabouzeid.gramophone.model.smartplaylist.LastAddedPlaylist;
 import com.kabouzeid.gramophone.model.smartplaylist.MyTopTracksPlaylist;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 

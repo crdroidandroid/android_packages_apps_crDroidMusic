@@ -28,7 +28,7 @@ import com.kabouzeid.gramophone.ui.fragments.player.NowPlayingScreen;
 import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 public class SettingsActivity extends PreferenceActivity implements OnPreferenceChangeListener {
     public static final String TAG = SettingsActivity.class.getSimpleName();

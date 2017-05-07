@@ -237,7 +237,7 @@
   <string name="pref_title_now_playing_screen_appearance">Görünüm</string>
   <string name="intro_label">Tanıtım</string>
   <string name="press_back_again_to_exit_intro">Tanıtımı atlamak için geri tuşuna basın.</string>
-  <string name="welcome_to_phonograph">"Phonograph'a Hoşgeldiniz, Android için güzel ve hafif bir müzik çalar. "</string>
+  <string name="welcome_to_phonograph">"crDroid Music'a Hoşgeldiniz, Android için güzel ve hafif bir müzik çalar. "</string>
   <string name="open_playing_queue_instruction">Şuan çalınıyor ekranı kartını yukarı kaydırmak çalma sırasının tamamını ortaya çıkarır.</string>
   <string name="rearrange_playing_queue_instruction">Çalma sırasını yeniden düzenlemek için şarkının parça numarasını kaydırın</string>
   <string name="library">Kütüphane</string>
@@ -250,9 +250,9 @@
   <string name="could_not_scan_files">%d dosyalar taranmadı.</string>
   <string name="listing_files">Dosyaları listele</string>
   <string name="new_start_directory">%s yeni bir başlangıç dizini.</string>
-  <string name="app_widget_big_name">Phonograph - Büyük</string>
-  <string name="app_widget_classic_name">Phonograph - Klasik</string>
-  <string name="app_widget_small_name">Phonograph - Küçük</string>
+  <string name="app_widget_big_name">Music - Büyük</string>
+  <string name="app_widget_classic_name">Music - Klasik</string>
+  <string name="app_widget_small_name">Music - Küçük</string>
   <string name="report_an_issue">Sorun bildir</string>
   <string name="bug_report_issue">Sorun</string>
   <string name="login">Oturum aç</string>

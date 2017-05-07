@@ -44,7 +44,7 @@ import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.kabouzeid.gramophone.util.PhonographColorUtil;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * Be careful when changing things in this Activity!

@@ -211,7 +211,7 @@
   <string name="join_community">Dołącz do społeczności Google+</string>
   <string name="join_community_summary">Jeśli potrzebujesz pomocy lub masz pytania, społeczność Phonograph na Google+ jest do tego dobrym miejscem</string>
   <string name="translate">Tłumaczenie</string>
-  <string name="translate_summary">Pomóż przetłumaczyć Phonograph na Twój ojczysty język</string>
+  <string name="translate_summary">Pomóż przetłumaczyć na Twój ojczysty język</string>
   <string name="rate_on_google_play">Oceń</string>
   <string name="rate_on_google_play_summary">Jeśli polubiłeś/aś Phonograph, oceń go pozytywnie w sklepie Google Play</string>
   <string name="donate">Wsparcie finansowe</string>
@@ -226,7 +226,7 @@
   <string name="pref_title_now_playing_screen_appearance">Wygląd</string>
   <string name="intro_label">Wprowadzenie</string>
   <string name="press_back_again_to_exit_intro">Naciśnij ponownie, aby pominąć wstęp</string>
-  <string name="welcome_to_phonograph">"Witaj w Phonograph, pięknym i lekkim odtwarzaczu muzyki na Androida "</string>
+  <string name="welcome_to_phonograph">"Witaj w crDroid Music, pięknym i lekkim odtwarzaczu muzyki na Androida "</string>
   <string name="open_playing_queue_instruction">Przesuń kartę na ekranie Obecnie Grane w górę, aby odsłonić pełną kolejkę odtwarzania</string>
   <string name="rearrange_playing_queue_instruction">Zmień kolejność odtwarzania, przeciągając numer utworu w górę lub w dół kolejki</string>
   <string name="library">Biblioteka</string>
@@ -239,9 +239,9 @@
   <string name="could_not_scan_files">Nie można przeskanować %d plików</string>
   <string name="listing_files">Lista plików</string>
   <string name="new_start_directory">%s jest nowym folderem startowym</string>
-  <string name="app_widget_big_name">Phonograph - Duży</string>
-  <string name="app_widget_classic_name">Phonograph - Klasyczny</string>
-  <string name="app_widget_small_name">Phonograph - Mały</string>
+  <string name="app_widget_big_name">Music - Duży</string>
+  <string name="app_widget_classic_name">Music - Klasyczny</string>
+  <string name="app_widget_small_name">Music - Mały</string>
   <string name="report_an_issue">Zgłoś problem</string>
   <string name="bug_report_issue">Problem</string>
   <string name="login">Zaloguj się</string>

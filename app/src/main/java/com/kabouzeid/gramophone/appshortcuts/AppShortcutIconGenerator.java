@@ -14,7 +14,7 @@ import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Adrian Campos

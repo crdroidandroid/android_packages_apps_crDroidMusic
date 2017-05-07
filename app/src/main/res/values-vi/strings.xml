@@ -210,7 +210,7 @@
   <string name="join_community">Tham gia cộng đồng Google Plus</string>
   <string name="join_community_summary">Nếu bạn cần trợ giúp hoặc có câu hỏi, hãy đến với cộng đồng Phonograph trên Google Plus.</string>
   <string name="translate">Dịch</string>
-  <string name="translate_summary">Hỗ trợ dịch Phonograph sang ngôn ngữ của bạn.</string>
+  <string name="translate_summary">Hỗ trợ dịch sang ngôn ngữ của bạn.</string>
   <string name="rate_on_google_play">Đánh giá</string>
   <string name="rate_on_google_play_summary">Hãy để lại một đánh giá tốt trên Google Play nếu bạn thích Phonograph.</string>
   <string name="donate">Hỗ trợ</string>
@@ -225,7 +225,7 @@
   <string name="pref_title_now_playing_screen_appearance">Giao diện</string>
   <string name="intro_label">Giới thiệu</string>
   <string name="press_back_again_to_exit_intro">Nhấn trở lại lần nữa để bỏ qua phần giới thiệu.</string>
-  <string name="welcome_to_phonograph">"Chào mừng bạn đến Phonograph, một máy nghe nhạc đẹp và nhẹ cho Android."</string>
+  <string name="welcome_to_phonograph">"Chào mừng bạn đến crDroid Music, một máy nghe nhạc đẹp và nhẹ cho Android."</string>
   <string name="open_playing_queue_instruction">Vuốt lên thẻ trong trình đang phát để đến với hàng đợi phát đầy đủ.</string>
   <string name="rearrange_playing_queue_instruction">Sắp xếp lại hàng đợi phát bằng cách kéo một bài hát từ số thứ tự của nó.</string>
   <string name="library">Thư viện</string>
@@ -238,9 +238,9 @@
   <string name="could_not_scan_files">Không thể quét %d tập tin.</string>
   <string name="listing_files">Liệt kê các tập tin</string>
   <string name="new_start_directory">%s là thư mục khởi đầu.</string>
-  <string name="app_widget_big_name">Phonograph - Lớn</string>
-  <string name="app_widget_classic_name">Phonograph - Cổ điển</string>
-  <string name="app_widget_small_name">Phonograph - Nhỏ</string>
+  <string name="app_widget_big_name">Music - Lớn</string>
+  <string name="app_widget_classic_name">Music - Cổ điển</string>
+  <string name="app_widget_small_name">Music - Nhỏ</string>
   <string name="report_an_issue">Báo cáo một vấn đề</string>
   <string name="bug_report_issue">Vấn đề</string>
   <string name="login">Tài khoản GitHub</string>

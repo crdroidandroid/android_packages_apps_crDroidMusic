@@ -14,7 +14,7 @@ import com.kabouzeid.gramophone.ui.fragments.mainactivity.library.pager.ArtistsF
 import com.kabouzeid.gramophone.ui.fragments.mainactivity.library.pager.PlaylistsFragment;
 import com.kabouzeid.gramophone.ui.fragments.mainactivity.library.pager.SongsFragment;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

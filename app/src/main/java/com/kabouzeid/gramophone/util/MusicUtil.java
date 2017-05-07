@@ -23,7 +23,7 @@ import com.kabouzeid.gramophone.model.Artist;
 import com.kabouzeid.gramophone.model.Playlist;
 import com.kabouzeid.gramophone.model.Song;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.io.IOException;

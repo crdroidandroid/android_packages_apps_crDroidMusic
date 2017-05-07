@@ -23,7 +23,7 @@ import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 import com.triggertrap.seekarc.SeekArc;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

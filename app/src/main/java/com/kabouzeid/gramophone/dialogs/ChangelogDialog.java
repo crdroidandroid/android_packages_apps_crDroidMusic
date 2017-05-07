@@ -21,7 +21,7 @@ import com.kabouzeid.appthemehelper.util.ATHUtil;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

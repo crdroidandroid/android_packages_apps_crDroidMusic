@@ -17,7 +17,7 @@ import android.view.View;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

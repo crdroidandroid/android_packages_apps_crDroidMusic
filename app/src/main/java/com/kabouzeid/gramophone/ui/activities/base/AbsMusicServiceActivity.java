@@ -16,7 +16,7 @@ import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.interfaces.MusicServiceEventListener;
 import com.kabouzeid.gramophone.service.MusicService;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

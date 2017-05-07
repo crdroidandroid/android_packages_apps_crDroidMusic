@@ -22,7 +22,7 @@ import com.kabouzeid.gramophone.loader.SongLoader;
 import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.service.MusicService;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.util.ArrayList;

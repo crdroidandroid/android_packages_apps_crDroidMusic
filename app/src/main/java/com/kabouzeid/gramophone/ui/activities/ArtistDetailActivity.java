@@ -54,7 +54,7 @@ import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.kabouzeid.gramophone.util.PhonographColorUtil;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -24,7 +24,7 @@ import com.kabouzeid.appthemehelper.util.ColorUtil;
 import com.kabouzeid.appthemehelper.util.MaterialValueHelper;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

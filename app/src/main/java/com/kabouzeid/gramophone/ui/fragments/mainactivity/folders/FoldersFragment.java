@@ -53,7 +53,7 @@ import com.kabouzeid.gramophone.util.ViewUtil;
 import com.kabouzeid.gramophone.views.BreadCrumbLayout;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.io.FileFilter;

@@ -26,7 +26,7 @@ import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 import java.util.List;
