@@ -45,7 +45,7 @@ import org.jaudiotagger.tag.TagException;
 import org.jaudiotagger.tag.images.Artwork;
 import org.jaudiotagger.tag.images.ArtworkFactory;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

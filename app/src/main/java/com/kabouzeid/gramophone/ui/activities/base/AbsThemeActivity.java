@@ -14,7 +14,7 @@ import com.kabouzeid.appthemehelper.util.MaterialDialogsUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -27,7 +27,7 @@ public abstract class AbsThemeActivity extends ATHToolbarActivity {
         // default theme
         if (!ThemeStore.isConfigured(this, 1)) {
             ThemeStore.editTheme(this)
-                    .activityTheme(R.style.Theme_Phonograph_Light)
+                    .activityTheme(R.style.Theme_Music_Light)
                     .primaryColorRes(R.color.md_indigo_500)
                     .accentColorRes(R.color.md_pink_A400)
                     .commit();

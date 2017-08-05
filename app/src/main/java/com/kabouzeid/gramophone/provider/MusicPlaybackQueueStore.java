@@ -31,7 +31,7 @@ import com.kabouzeid.gramophone.model.Song;
 import java.util.ArrayList;
 
 /**
- * @author Andrew Neal, modified for Phonograph by Karim Abou Zeid
+ * @author Andrew Neal, modified for Music by Karim Abou Zeid
  *         <p/>
  *         This keeps track of the music playback and history state of the playback service
  */

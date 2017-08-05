@@ -18,7 +18,7 @@ import com.kabouzeid.gramophone.model.Playlist;
 import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.util.PlaylistsUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

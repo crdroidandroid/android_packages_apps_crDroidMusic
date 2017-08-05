@@ -19,7 +19,7 @@ import com.kabouzeid.gramophone.ui.fragments.AbsMusicServiceFragment;
 import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.util.NavigationUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 public abstract class AbsPlayerFragment extends AbsMusicServiceFragment implements Toolbar.OnMenuItemClickListener, PaletteColorHolder {
     public static final String TAG = AbsPlayerFragment.class.getSimpleName();

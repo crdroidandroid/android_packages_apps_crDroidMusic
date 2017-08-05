@@ -1,16 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Phonograph" parent="Theme.Phonograph.Base" />
+    <style name="Theme.Music" parent="Theme.Music.Base" />
 
-    <style name="Theme.Phonograph.Light" parent="Theme.Phonograph.Base.Light" />
+    <style name="Theme.Music.Light" parent="Theme.Music.Base.Light" />
 
-    <style name="Theme.Phonograph.Black" parent="Theme.Phonograph.Base.Black" />
+    <style name="Theme.Music.Black" parent="Theme.Music.Base.Black" />
 
-    <style name="Theme.Phonograph.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
+    <style name="Theme.Music.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
 
-    <style name="Theme.Phonograph.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="Theme.Music.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
 
-    <style name="Theme.Phonograph.Settings" parent="@android:style/Theme.Material.Light.DarkActionBar" >
+    <style name="Theme.Music.Settings" parent="@android:style/Theme.Material.Light.DarkActionBar" >
         <item name="android:colorAccent">@color/colorAccent</item>
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>

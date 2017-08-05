@@ -26,7 +26,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.kabouzeid.appthemehelper.util.TintHelper;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

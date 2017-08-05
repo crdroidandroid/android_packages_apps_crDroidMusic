@@ -11,7 +11,7 @@
   <string name="action_settings">"設定"</string>
   <string name="action_done">完了</string>
   <string name="action_skip">スキップ</string>
-  <string name="action_about">Phonographについて</string>
+  <string name="action_about">Musicについて</string>
   <string name="action_clear_playlist">プレイリストの初期化</string>
   <string name="action_playing_queue">キュー</string>
   <string name="action_add_to_favorites">お気に入りに追加</string>

@@ -29,7 +29,7 @@ import static com.kabouzeid.gramophone.service.MusicService.ACTION_REWIND;
 import static com.kabouzeid.gramophone.service.MusicService.ACTION_SKIP;
 import static com.kabouzeid.gramophone.service.MusicService.ACTION_TOGGLE_PAUSE;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

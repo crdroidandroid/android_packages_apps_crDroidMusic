@@ -1,4 +1,4 @@
-# Phonograph
+# Music
 
 **A material designed local music player for Android.**
 
@@ -12,4 +12,4 @@
 
 ## License
 
-Phonograph is released under the GNU General Public License v3.0 (GPLv3), which can be found here: [License](LICENSE.txt)
+Music is released under the GNU General Public License v3.0 (GPLv3), which can be found here: [License](LICENSE.txt)

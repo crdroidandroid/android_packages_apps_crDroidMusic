@@ -9,7 +9,7 @@
  * governing permissions and limitations under the License.
  */
 
-// Modified for Phonograph by Karim Abou Zeid (kabouzeid).
+// Modified for Music by Karim Abou Zeid (kabouzeid).
 
 package com.kabouzeid.gramophone.service;
 
@@ -164,7 +164,7 @@ public class MediaButtonIntentReceiver extends WakefulBroadcastReceiver {
         if (mWakeLock == null) {
             Context appContext = context.getApplicationContext();
             PowerManager pm = (PowerManager) appContext.getSystemService(Context.POWER_SERVICE);
-            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Phonograph headset button");
+            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Music headset button");
             mWakeLock.setReferenceCounted(false);
         }
         // Make sure we don't indefinitely hold the wake lock under any circumstances

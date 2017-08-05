@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.kabouzeid.gramophone.service.playback.Playback;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Andrew Neal, Karim Abou Zeid (kabouzeid)

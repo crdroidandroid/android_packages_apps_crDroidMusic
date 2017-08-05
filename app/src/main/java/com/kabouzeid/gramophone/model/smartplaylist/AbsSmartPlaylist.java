@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 
 import com.kabouzeid.gramophone.model.AbsCustomPlaylist;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

@@ -23,7 +23,7 @@ import com.kabouzeid.gramophone.views.PlayPauseDrawable;
 
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

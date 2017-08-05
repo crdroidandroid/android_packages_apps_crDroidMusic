@@ -96,12 +96,13 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages me.zhanghai.android.materialprogressbar \
     --extra-packages de.psdev.licensesdialog \
     --extra-packages com.triggertrap.seekarc \
-    --extra-packages com.kabouzeid.appthemehelper
+    --extra-packages com.kabouzeid.appthemehelper \
+    --rename-manifest-package com.crdroid.music
 
 LOCAL_PROGUARD_FLAG_FILES := proguard-rules.pro
 LOCAL_JAR_EXCLUDE_FILES := none
 LOCAL_SRC_FILES += $(call all-java-files-under, java)
-LOCAL_PACKAGE_NAME := Phonograph
+LOCAL_PACKAGE_NAME := crDroidMusic
 LOCAL_SDK_VERSION := current
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_PACKAGE)

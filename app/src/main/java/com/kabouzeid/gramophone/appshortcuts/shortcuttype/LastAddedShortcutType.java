@@ -8,7 +8,7 @@ import android.os.Build;
 import com.kabouzeid.gramophone.appshortcuts.AppShortcutIconGenerator;
 import com.kabouzeid.gramophone.appshortcuts.AppShortcutLauncherActivity;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Adrian Campos

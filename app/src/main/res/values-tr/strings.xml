@@ -212,11 +212,11 @@
     <string name="report_bugs">Hata raporlayınız</string>
     <string name="report_bugs_summary">Hata raporlayın ya da yeni özellikler talep edin</string>
     <string name="join_community">Google+ grubuna katılın</string>
-    <string name="join_community_summary">Eğer yardıma ihtiyacınız varsa veya sorunuz varsa Google+ Phonograph topluluğu en doğru yer.</string>
+    <string name="join_community_summary">Eğer yardıma ihtiyacınız varsa veya sorunuz varsa Google+ Music topluluğu en doğru yer.</string>
     <string name="translate">Çeviri</string>
     <string name="translate_summary">Yerel dilinize çeviri için yardımda bulunun.</string>
     <string name="rate_on_google_play">Oy ver</string>
-    <string name="rate_on_google_play_summary">Eğer Phonograph\'ı beğendiyseniz Google Play\'de olumlu oy verin</string>
+    <string name="rate_on_google_play_summary">Eğer Music\'ı beğendiyseniz Google Play\'de olumlu oy verin</string>
     <string name="donate">Bağış yap</string>
     <string name="donate_summary">Eğer çalışmalarım için bağışta bulunmak istiyorsanız birkaç dolar bırakabilirsiniz.</string>
     <string name="aidan_follestad_summary">Tema motoru ve diğer muhteşem özellikler için.</string>
@@ -229,7 +229,7 @@
     <string name="pref_title_now_playing_screen_appearance">Görünüm</string>
     <string name="intro_label">Tanıtım</string>
     <string name="press_back_again_to_exit_intro">Tanıtımı atlamak için geri tuşuna basın.</string>
-    <string name="welcome_to_phonograph">"Phonograph'a Hoşgeldiniz, Android için muhteşem bir müzik çalar. "</string>
+    <string name="welcome_to_phonograph">"Music'a Hoşgeldiniz, Android için muhteşem bir müzik çalar. "</string>
     <string name="open_playing_queue_instruction">Şuan çalınıyor ekranı kartını yukarı kaydırmak çalma sırasının tamamını ortaya çıkarır.</string>
     <string name="rearrange_playing_queue_instruction">Çalma sırasını yeniden düzenlemek için şarkının parça numarasını kaydırın</string>
     <string name="library">Kütüphane</string>
@@ -242,9 +242,9 @@
     <string name="could_not_scan_files">%d dosyalar taranmadı.</string>
     <string name="listing_files">Dosyaları listele</string>
     <string name="new_start_directory">%s yeni bir başlangıç dizini.</string>
-    <string name="app_widget_big_name">Phonograph - Büyük</string>
-    <string name="app_widget_classic_name">Phonograph - Klasik</string>
-    <string name="app_widget_small_name">Phonograph - Küçük</string>
+    <string name="app_widget_big_name">Music - Büyük</string>
+    <string name="app_widget_classic_name">Music - Klasik</string>
+    <string name="app_widget_small_name">Music - Küçük</string>
     <string name="report_an_issue">Sorun bildir</string>
     <string name="bug_report_issue">Sorun</string>
     <string name="login">Oturum aç</string>

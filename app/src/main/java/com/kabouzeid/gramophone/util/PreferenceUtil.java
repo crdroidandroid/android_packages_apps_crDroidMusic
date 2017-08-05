@@ -11,7 +11,7 @@ import com.kabouzeid.gramophone.helper.SortOrder;
 import com.kabouzeid.gramophone.ui.fragments.mainactivity.folders.FoldersFragment;
 import com.kabouzeid.gramophone.ui.fragments.player.NowPlayingScreen;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 
@@ -101,12 +101,12 @@ public final class PreferenceUtil {
     public static int getThemeResFromPrefValue(String themePrefValue) {
         switch (themePrefValue) {
             case "dark":
-                return R.style.Theme_Phonograph;
+                return R.style.Theme_Music;
             case "black":
-                return R.style.Theme_Phonograph_Black;
+                return R.style.Theme_Music_Black;
             case "light":
             default:
-                return R.style.Theme_Phonograph_Light;
+                return R.style.Theme_Music_Light;
         }
     }
 

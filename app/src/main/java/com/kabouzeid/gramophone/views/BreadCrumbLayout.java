@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author Aidan Follestad (afollestad), modified for Phonograph by Karim Abou Zeid (kabouzeid)
+ * @author Aidan Follestad (afollestad), modified for Music by Karim Abou Zeid (kabouzeid)
  */
 public class BreadCrumbLayout extends HorizontalScrollView implements View.OnClickListener {
 

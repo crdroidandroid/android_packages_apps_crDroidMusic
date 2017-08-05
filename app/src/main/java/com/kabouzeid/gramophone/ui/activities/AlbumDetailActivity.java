@@ -58,7 +58,7 @@ import java.util.Locale;
 
 import java.util.ArrayList;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;

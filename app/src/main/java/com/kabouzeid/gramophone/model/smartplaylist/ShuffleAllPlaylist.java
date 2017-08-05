@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import com.kabouzeid.gramophone.loader.SongLoader;
 import com.kabouzeid.gramophone.model.Song;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 import java.util.ArrayList;
 
 public class ShuffleAllPlaylist extends AbsSmartPlaylist {

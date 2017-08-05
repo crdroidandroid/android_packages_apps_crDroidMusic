@@ -205,9 +205,9 @@
   <string name="report_bugs">أبلغ عن وجود مشكلة</string>
   <string name="report_bugs_summary">أبلغ عن وجود مشاكل أو طلب ميزات جديدة</string>
   <string name="join_community">انضم لمجموعة جوجل +</string>
-  <string name="join_community_summary">إذا كنت تحتاج إلى مساعدة أو لديك أسئلة؛ مجتمع Phonograph في جوجل+ هو المكان المناسب لطرحها</string>
+  <string name="join_community_summary">إذا كنت تحتاج إلى مساعدة أو لديك أسئلة؛ مجتمع Music في جوجل+ هو المكان المناسب لطرحها</string>
   <string name="translate">ترجمة</string>
-  <string name="translate_summary">ساعدنا في ترجمة Phonograph إلى لغتك الأم</string>
+  <string name="translate_summary">ساعدنا في ترجمة Music إلى لغتك الأم</string>
   <string name="rate_on_google_play">قيّم</string>
   <string name="rate_on_google_play_summary">اترك تقييماً إيجابياً في متجر جوجل بلاي إذا أعجبك التطبيق.</string>
   <string name="donate">تبرع لنا</string>
@@ -222,7 +222,7 @@
   <string name="pref_title_now_playing_screen_appearance">المظهر</string>
   <string name="intro_label">المقدمة</string>
   <string name="press_back_again_to_exit_intro">اضغط زر الخلف مجدداً لتجاوز المقدمة</string>
-  <string name="welcome_to_phonograph">"مرحباً في Phonograph، مشغل موسيقى خفيف وأنيق على منصة أندرويد."</string>
+  <string name="welcome_to_phonograph">"مرحباً في Music، مشغل موسيقى خفيف وأنيق على منصة أندرويد."</string>
   <string name="open_playing_queue_instruction">اسحب البطاقة في شاشة \"تستمع الآن\" لإظهار جميع المقطوعات على قائمة الانتظار</string>
   <string name="rearrange_playing_queue_instruction">إعادة ترتيب القائمة بواسطة سحب المقطوعة من رقمها</string>
   <string name="library">المكتبة</string>
