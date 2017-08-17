@@ -8,7 +8,6 @@ import com.anjlab.android.iab.v3.TransactionDetails;
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.appshortcuts.DynamicShortcutManager;
 
-
 /**
  * @author Karim Abou Zeid (kabouzeid)
  */
