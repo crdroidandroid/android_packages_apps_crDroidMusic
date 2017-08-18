@@ -18,6 +18,7 @@ public class BootReceiver extends BroadcastReceiver {
         if (widgetManager.getAppWidgetIds(new ComponentName(context, AppWidgetBig.class)).length > 0 ||
                 widgetManager.getAppWidgetIds(new ComponentName(context, AppWidgetClassic.class)).length > 0 ||
                 widgetManager.getAppWidgetIds(new ComponentName(context, AppWidgetSmall.class)).length > 0 ||
+                widgetManager.getAppWidgetIds(new ComponentName(context, AppWidgetCardBlack.class)).length > 0 ||
                 widgetManager.getAppWidgetIds(new ComponentName(context, AppWidgetCard.class)).length > 0) {
             final Intent serviceIntent = new Intent(context, MusicService.class);
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) { // not allowed on Oreo
