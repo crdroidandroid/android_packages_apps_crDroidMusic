@@ -1,11 +1,11 @@
 #!/bin/bash
 #
 ROOT_PATH=$PWD
-BUILD_PATH="$ROOT_PATH/app/build/outputs/apk/"
+BUILD_PATH="$ROOT_PATH/app/build/outputs/apk/release"
 APP_NAME="Phonograph"
 
 # Build app
-./gradlew build
+./gradlew assembleRelease
 
 #sign and zipalign
 java -jar sign.jar $BUILD_PATH/app-release-unsigned.apk
