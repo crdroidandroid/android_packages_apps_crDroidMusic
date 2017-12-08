@@ -31,6 +31,8 @@ import com.kabouzeid.gramophone.util.PhonographColorUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 import com.kabouzeid.gramophone.util.Util;
 
+import com.crdroid.music.R;
+
 public class PlayingNotificationImpl extends PlayingNotification {
 
     private Target<BitmapPaletteWrapper> target;
