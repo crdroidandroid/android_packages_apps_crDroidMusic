@@ -49,6 +49,7 @@ public class NowPlayingScreenPreferenceDialog extends DialogFragment implements 
 
         InkPageIndicator pageIndicator = (InkPageIndicator) view.findViewById(R.id.page_indicator);
         pageIndicator.setViewPager(viewPager);
+        pageIndicator.onPageSelected(viewPager.getCurrentItem());
 
         return new MaterialDialog.Builder(getContext())
                 .title(R.string.pref_title_now_playing_screen_appearance)
