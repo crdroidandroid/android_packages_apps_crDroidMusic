@@ -44,6 +44,8 @@ import com.kabouzeid.gramophone.appwidgets.AppWidgetCard;
 import com.kabouzeid.gramophone.appwidgets.AppWidgetCardBlack;
 import com.kabouzeid.gramophone.appwidgets.AppWidgetClassic;
 import com.kabouzeid.gramophone.appwidgets.AppWidgetClassicBlack;
+import com.kabouzeid.gramophone.appwidgets.AppWidgetCardBlackTransparent;
+import com.kabouzeid.gramophone.appwidgets.AppWidgetClassicBlackTransparent;
 import com.kabouzeid.gramophone.appwidgets.AppWidgetSmall;
 import com.kabouzeid.gramophone.glide.BlurTransformation;
 import com.kabouzeid.gramophone.glide.SongGlideRequest;
@@ -134,6 +136,8 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
     private AppWidgetCard appWidgetCard = AppWidgetCard.getInstance();
     private AppWidgetCardBlack appWidgetCardBlack = AppWidgetCardBlack.getInstance();
     private AppWidgetClassicBlack appWidgetClassicBlack = AppWidgetClassicBlack.getInstance();
+    private AppWidgetCardBlackTransparent appWidgetCardBlackTransparent = AppWidgetCardBlackTransparent.getInstance();
+    private AppWidgetClassicBlackTransparent appWidgetClassicBlackTransparent = AppWidgetClassicBlackTransparent.getInstance();
 
     private Playback playback;
     private ArrayList<Song> playingQueue = new ArrayList<>();
@@ -1021,6 +1025,8 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
         appWidgetCard.notifyChange(this, what);
         appWidgetCardBlack.notifyChange(this, what);
         appWidgetClassicBlack.notifyChange(this, what);
+        appWidgetCardBlackTransparent.notifyChange(this, what);
+        appWidgetClassicBlackTransparent.notifyChange(this, what);
     }
 
     private static final long MEDIA_SESSION_ACTIONS = PlaybackStateCompat.ACTION_PLAY
@@ -1274,6 +1280,12 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
             } else if (AppWidgetClassicBlack.NAME.equals(command)) {
                 final int[] ids = intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
                 appWidgetClassicBlack.performUpdate(MusicService.this, ids);
+            } else if (AppWidgetCardBlackTransparent.NAME.equals(command)) {
+                final int[] ids = intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
+                appWidgetCardBlackTransparent.performUpdate(MusicService.this, ids);
+            } else if (AppWidgetClassicBlackTransparent.NAME.equals(command)) {
+                final int[] ids = intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
+                appWidgetClassicBlackTransparent.performUpdate(MusicService.this, ids);
             }
         }
     };
