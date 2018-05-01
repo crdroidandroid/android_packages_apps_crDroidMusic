@@ -244,7 +244,8 @@
     <string name="app_widget_classic_name">Phonograph - Classic</string>
     <string name="app_widget_small_name">Phonograph - Small</string>
     <string name="app_widget_card_name">Phonograph - Card</string>
-    <string name="app_widget_card_name_black">Phonograph - Black Card</string>
+    <string name="app_widget_card_black_name">Phonograph - Black Card</string>
+    <string name="app_widget_classic_black_name">Phonograph - Black Classic Card</string>
     <string name="report_an_issue">Report an issue</string>
     <string name="bug_report_issue">Issue</string>
     <string name="login">Login</string>
