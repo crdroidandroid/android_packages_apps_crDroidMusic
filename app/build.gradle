@@ -45,7 +45,7 @@ android {
 
         applicationId 'com.kabouzeid.gramophone'
         versionCode 161
-        versionName '1.4 Mod'
+        versionName '1.4.2 Mod'
     }
     buildTypes {
         release {
