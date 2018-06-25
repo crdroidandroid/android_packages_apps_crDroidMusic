@@ -31,22 +31,21 @@ static def gitBranch() {
 }
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.0'
-    dataBinding {
-        enabled = true
-    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 27
 
-        renderscriptTargetApi 28
+        renderscriptTargetApi 27
         vectorDrawables.useSupportLibrary = true
 
         applicationId 'com.kabouzeid.gramophone'
-        versionCode 161
-        versionName '1.4.2 Mod'
+
+        versionCode 162
+        versionName '1.5.0 Mod'
     }
+
     buildTypes {
         release {
             minifyEnabled true
