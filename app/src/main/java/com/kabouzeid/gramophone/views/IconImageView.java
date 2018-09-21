@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 
 import com.kabouzeid.appthemehelper.util.ATHUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

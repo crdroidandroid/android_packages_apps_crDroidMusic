@@ -28,7 +28,7 @@ android {
         renderscriptTargetApi 26
         vectorDrawables.useSupportLibrary = true
 
-        applicationId 'org.omnirom.gramophone'
+        applicationId 'com.crdroid.music'
         versionCode 132
         versionName '0.15.0'
     }

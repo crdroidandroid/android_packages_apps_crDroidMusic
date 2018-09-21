@@ -8,11 +8,11 @@ import android.support.annotation.RequiresApi;
 
 import com.kabouzeid.gramophone.service.MusicService;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 public abstract class PlayingNotification {
 

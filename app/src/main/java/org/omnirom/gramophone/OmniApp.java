@@ -1,4 +1,4 @@
-package org.omnirom.gramophone;
+package com.crdroid.music;
 
 import android.app.Application;
 import android.os.Build;

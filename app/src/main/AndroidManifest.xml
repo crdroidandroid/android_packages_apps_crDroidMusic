@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="org.omnirom.gramophone"
+<manifest package="com.crdroid.music"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -209,7 +209,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="org.omnirom.gramophone"
+            android:authorities="com.crdroid.music"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

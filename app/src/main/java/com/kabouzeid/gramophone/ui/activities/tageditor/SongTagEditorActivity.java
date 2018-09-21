@@ -12,7 +12,7 @@ import com.kabouzeid.gramophone.loader.SongLoader;
 
 import org.jaudiotagger.tag.FieldKey;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 import java.util.EnumMap;

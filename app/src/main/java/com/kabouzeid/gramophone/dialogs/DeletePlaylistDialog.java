@@ -11,7 +11,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.kabouzeid.gramophone.model.Playlist;
 import com.kabouzeid.gramophone.util.PlaylistsUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 import java.util.ArrayList;
 

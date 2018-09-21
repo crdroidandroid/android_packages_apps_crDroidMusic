@@ -9,7 +9,7 @@ import com.kabouzeid.gramophone.glide.palette.BitmapPaletteTarget;
 import com.kabouzeid.gramophone.glide.palette.BitmapPaletteWrapper;
 import com.kabouzeid.gramophone.util.PhonographColorUtil;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 public abstract class PhonographColoredTarget extends BitmapPaletteTarget {
     public PhonographColoredTarget(ImageView view) {

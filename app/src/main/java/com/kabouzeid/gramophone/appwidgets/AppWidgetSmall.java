@@ -26,7 +26,7 @@ import com.kabouzeid.gramophone.service.MusicService;
 import com.kabouzeid.gramophone.ui.activities.MainActivity;
 import com.kabouzeid.gramophone.util.Util;
 
-import org.omnirom.gramophone.R;
+import com.crdroid.music.R;
 
 public class AppWidgetSmall extends BaseAppWidget {
     public static final String NAME = "app_widget_small";
