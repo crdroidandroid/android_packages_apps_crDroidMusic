@@ -225,11 +225,11 @@
   <string name="report_bugs">Rapportere feil</string>
   <string name="report_bugs_summary">Rapportere feil eller foreslå nye funksjoner.</string>
   <string name="join_community">Kom i gang med Google+</string>
-  <string name="join_community_summary">Hvis du trenger hjelp eller har spørsmål, er Phonograph-fellesskapet på Google+ et godt sted å gå.</string>
+  <string name="join_community_summary">Hvis du trenger hjelp eller har spørsmål, er crDroid Music-fellesskapet på Google+ et godt sted å gå.</string>
   <string name="translate">Oversette</string>
   <string name="translate_summary">Hjelp å oversette fonograf til ditt morsmål.</string>
   <string name="rate_on_google_play">Vurdering</string>
-  <string name="rate_on_google_play_summary">Gi en positiv vurdering på Google Play hvis du liker Phonograph.</string>
+  <string name="rate_on_google_play_summary">Gi en positiv vurdering på Google Play hvis du liker crDroid Music.</string>
   <string name="donate">Doner</string>
   <string name="donate_summary">Hvis du synes jeg fortjener betaling for mitt arbeid, kan du gi et par dollar her.</string>
   <string name="aidan_follestad_summary">For temamotor og andre kule ting.</string>
@@ -242,7 +242,7 @@
   <string name="pref_title_now_playing_screen_appearance">Utseende</string>
   <string name="intro_label">Innledning</string>
   <string name="press_back_again_to_exit_intro">Trykk tilbake igjen for å hoppe over intro.</string>
-  <string name="welcome_to_phonograph">"Velkommen til Phonograph, en vakker og lett musikkspiller for Android. "</string>
+  <string name="welcome_to_phonograph">"Velkommen til crDroid Music, en vakker og lett musikkspiller for Android. "</string>
   <string name="open_playing_queue_instruction">Dra kortet i avspillingsbildet for å vise hele avspillingskøen.</string>
   <string name="rearrange_playing_queue_instruction">Endre avspillingskø ved å dra en sang fra sitt spornummer.</string>
   <string name="library">Bibliotek</string>
@@ -255,9 +255,9 @@
   <string name="could_not_scan_files">Kunne ikke skanne %d filer.</string>
   <string name="listing_files">Lister filer</string>
   <string name="new_start_directory">%s er ny startkatalog.</string>
-  <string name="app_widget_big_name">Phonograph - stor</string>
-  <string name="app_widget_classic_name">Phonograph - klassisk</string>
-  <string name="app_widget_small_name">Phonograph - små</string>
+  <string name="app_widget_big_name">Music - stor</string>
+  <string name="app_widget_classic_name">Music - klassisk</string>
+  <string name="app_widget_small_name">Music - små</string>
   <string name="report_an_issue">Rapporter en feil</string>
   <string name="bug_report_issue">Problem</string>
   <string name="login">Innlogging</string>

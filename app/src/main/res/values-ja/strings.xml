@@ -12,7 +12,7 @@
   <string name="action_grant">付与</string>
   <string name="action_done">完了</string>
   <string name="action_skip">スキップ</string>
-  <string name="action_about">Phonographについて</string>
+  <string name="action_about">crDroid Musicについて</string>
   <string name="action_show_intro">イントロを表示</string>
   <string name="action_clear_playlist">プレイリストの初期化</string>
   <string name="action_playing_queue">キュー</string>
@@ -235,11 +235,11 @@
   <string name="report_bugs">バグを報告</string>
   <string name="report_bugs_summary">パグの報告または新機能のリクエスト</string>
   <string name="join_community">GooglePlusコミュニティに参加する</string>
-  <string name="join_community_summary">助けが必要な場合や質問がある場合は、Google+のPhonographコミュニティがおすすめです。</string>
+  <string name="join_community_summary">助けが必要な場合や質問がある場合は、Google+のcrDroid Musicコミュニティがおすすめです。</string>
   <string name="translate">翻訳</string>
-  <string name="translate_summary">Phonographの翻訳を手伝う</string>
+  <string name="translate_summary">crDroid Musicの翻訳を手伝う</string>
   <string name="rate_on_google_play">評価</string>
-  <string name="rate_on_google_play_summary">Phonographを気に入ったらGoogle Playでプラスの評価を付けてください
+  <string name="rate_on_google_play_summary">crDroid Musicを気に入ったらGoogle Playでプラスの評価を付けてください
 </string>
   <string name="donate">寄付</string>
   <string name="donate_summary">私の仕事を気に入ったら、私を寄付することもできます。</string>
@@ -253,7 +253,7 @@
   <string name="pref_title_now_playing_screen_appearance">外観</string>
   <string name="intro_label">イントロダクション</string>
   <string name="press_back_again_to_exit_intro">イントロをスキップするにはもう一度戻るを押す</string>
-  <string name="welcome_to_phonograph">"Androidの美しく軽量な音楽プレーヤー、Phonographへようこそ。"</string>
+  <string name="welcome_to_phonograph">"Androidの美しく軽量な音楽プレーヤー、crDroid Musicへようこそ。"</string>
   <string name="open_playing_queue_instruction">現在再生中の画面でカードをスワイプして再生キュー全体を表示します</string>
   <string name="rearrange_playing_queue_instruction">トラック番号から曲をドラッグして再生キューを並べ替えます</string>
   <string name="library">ライブラリ</string>
@@ -266,10 +266,10 @@
   <string name="could_not_scan_files">%dファイルをスキャンできませんでした</string>
   <string name="listing_files">ファイルの一覧</string>
   <string name="new_start_directory">%sが新しい開始ディレクトリです</string>
-  <string name="app_widget_big_name">Phonograph - Big</string>
-  <string name="app_widget_classic_name">Phonograph - Classic</string>
-  <string name="app_widget_small_name">Phonograph - Small</string>
-  <string name="app_widget_card_name">Phonograph - Card</string>
+  <string name="app_widget_big_name">Music - Big</string>
+  <string name="app_widget_classic_name">Music - Classic</string>
+  <string name="app_widget_small_name">Music - Small</string>
+  <string name="app_widget_card_name">Music - Card</string>
   <string name="report_an_issue">問題を報告</string>
   <string name="bug_report_issue">問題</string>
   <string name="login">ログイン</string>

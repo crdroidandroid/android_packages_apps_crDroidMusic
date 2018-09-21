@@ -108,10 +108,10 @@
   <string name="intro_label">Sissejuhatus</string>
   <string name="library">Teek</string>
   <string name="folders">Kaustad</string>
-  <string name="app_widget_big_name">Phonograph - suur</string>
-  <string name="app_widget_classic_name">Phonograph - klassikaline</string>
-  <string name="app_widget_small_name">Phonograph - väike</string>
-  <string name="app_widget_card_name">Phonograph - kaart</string>
+  <string name="app_widget_big_name">Music - suur</string>
+  <string name="app_widget_classic_name">Music - klassikaline</string>
+  <string name="app_widget_small_name">Music - väike</string>
+  <string name="app_widget_card_name">Music - kaart</string>
   <string name="report_an_issue">Teavita probleemist</string>
   <string name="bug_report_issue">Probleem</string>
   <string name="login">Logi sisse</string>
