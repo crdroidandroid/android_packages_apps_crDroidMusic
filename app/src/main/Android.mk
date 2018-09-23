@@ -80,7 +80,7 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages com.kabouzeid.appthemehelper \
     --rename-manifest-package com.crdroid.music
 
-LOCAL_USE_AAPT2 := true
+LOCAL_USE_AAPT2 := false
 LOCAL_PROGUARD_FLAG_FILES := proguard-rules.pro
 LOCAL_JAR_EXCLUDE_FILES := none
 LOCAL_SRC_FILES += $(call all-java-files-under, java)
