@@ -204,9 +204,9 @@
     <string name="report_bugs">버그 제보</string>
     <string name="report_bugs_summary">버그를  제보하거나 새로운 기능을 제안합니다.</string>
     <string name="join_community">Google + 커뮤니티에 가입하세요.</string>
-    <string name="join_community_summary">Google + 의 Phonograph 커뮤니티에서 질문을 하거나 도움을 받을 수 있습니다.</string>
+    <string name="join_community_summary">Google + 의 crDroid Music 커뮤니티에서 질문을 하거나 도움을 받을 수 있습니다.</string>
     <string name="translate">번역</string>
-    <string name="translate_summary">Phonograph의 우리말 번역에 기여하세요.</string>
+    <string name="translate_summary">crDroid Music의 우리말 번역에 기여하세요.</string>
     <string name="rate_on_google_play">별점</string>
     <string name="rate_on_google_play_summary">마음에 드셨다면 Play 스토어에 긍정적인 평가를 남겨주세요.</string>
     <string name="donate">기부</string>
@@ -220,7 +220,7 @@
     <string name="up_next">다음 곡</string>
     <string name="pref_title_now_playing_screen_appearance">스타일</string>
     <string name="intro_label">소개</string>
-    <string name="welcome_to_phonograph">"Android를 위한 아름답고 가벼운 음악 플레이어인 Phonograph에 오신 것을 환영합니다."</string>
+    <string name="welcome_to_phonograph">"Android를 위한 아름답고 가벼운 음악 플레이어인 crDroid Music에 오신 것을 환영합니다."</string>
     <string name="open_playing_queue_instruction">재생 중 화면 하단의 카드를 쓸어올려 재생 대기열을 표시할 수 있습니다.</string>
     <string name="rearrange_playing_queue_instruction">재생 대기열의 순서를 변경하려면 곡 번호를 잡고 드래그하세요.</string>
     <string name="library">보관함</string>
@@ -234,10 +234,10 @@
     <string name="could_not_scan_files">%d 개 파일을 스캔하지 못했습니다.</string>
     <string name="listing_files">파일 나열 중</string>
     <string name="new_start_directory">%s 이(가) 새 시작 디렉토리로 설정되었습니다.</string>
-    <string name="app_widget_big_name">Phonograph - 대형</string>
-    <string name="app_widget_classic_name">Phonograph - 클래식</string>
-    <string name="app_widget_small_name">Phonograph - 소형</string>
-    <string name="app_widget_card_name">Phonograph - 카드</string>
+    <string name="app_widget_big_name">Music - 대형</string>
+    <string name="app_widget_classic_name">Music - 클래식</string>
+    <string name="app_widget_small_name">Music - 소형</string>
+    <string name="app_widget_card_name">Music - 카드</string>
     <string name="report_an_issue">버그 제보</string>
     <string name="bug_report_issue">문제</string>
     <string name="login">로그인</string>
