@@ -2,7 +2,7 @@
 #
 ROOT_PATH=$PWD
 BUILD_PATH="$ROOT_PATH/app/build/outputs/apk/release"
-APP_NAME="Phonograph"
+APP_NAME="crDroidMusic"
 
 # Build app
 ./gradlew assembleRelease
