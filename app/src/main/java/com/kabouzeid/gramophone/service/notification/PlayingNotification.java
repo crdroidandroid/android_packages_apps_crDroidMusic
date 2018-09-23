@@ -6,7 +6,7 @@ import android.app.NotificationManager;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.service.MusicService;
 
 import static android.content.Context.NOTIFICATION_SERVICE;

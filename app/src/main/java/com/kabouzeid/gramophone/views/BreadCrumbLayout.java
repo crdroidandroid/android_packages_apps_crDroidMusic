@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 
 import java.io.File;
 import java.util.ArrayList;

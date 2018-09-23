@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Parcel;
 import android.support.annotation.NonNull;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.loader.SongLoader;
 import com.kabouzeid.gramophone.model.Song;
 

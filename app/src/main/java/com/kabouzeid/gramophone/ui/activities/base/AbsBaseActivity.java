@@ -16,7 +16,7 @@ import android.view.KeyEvent;
 import android.view.View;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

@@ -11,7 +11,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.model.CategoryInfo;
 import com.kabouzeid.gramophone.util.SwipeAndDragHelper;
 

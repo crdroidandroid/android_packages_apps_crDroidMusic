@@ -8,7 +8,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 
 import com.kabouzeid.appthemehelper.util.ToolbarContentTintHelper;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.loader.SongLoader;
 
 import org.jaudiotagger.tag.FieldKey;

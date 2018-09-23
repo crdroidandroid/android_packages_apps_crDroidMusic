@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.kabouzeid.gramophone.App;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.App;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.dialogs.AddToPlaylistDialog;
 import com.kabouzeid.gramophone.dialogs.DeletePlaylistDialog;
 import com.kabouzeid.gramophone.dialogs.RenamePlaylistDialog;

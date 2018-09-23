@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.afollestad.materialcab.MaterialCab;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.interfaces.CabHolder;
 
 import java.util.ArrayList;

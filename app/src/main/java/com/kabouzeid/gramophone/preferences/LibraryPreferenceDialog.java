@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.CategoryInfoAdapter;
 import com.kabouzeid.gramophone.model.CategoryInfo;
 import com.kabouzeid.gramophone.util.PreferenceUtil;

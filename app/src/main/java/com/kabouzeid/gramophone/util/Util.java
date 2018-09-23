@@ -25,7 +25,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 import com.kabouzeid.appthemehelper.util.TintHelper;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)

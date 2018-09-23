@@ -7,7 +7,7 @@ import android.support.v4.app.DialogFragment;
 import android.text.InputType;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.util.PlaylistsUtil;
 
 /**

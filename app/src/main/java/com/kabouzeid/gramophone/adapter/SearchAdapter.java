@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.kabouzeid.appthemehelper.util.ATHUtil;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.base.MediaEntryViewHolder;
 import com.kabouzeid.gramophone.glide.ArtistGlideRequest;
 import com.kabouzeid.gramophone.glide.SongGlideRequest;

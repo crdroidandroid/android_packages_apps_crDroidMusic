@@ -19,7 +19,7 @@ import android.os.Build;
 import android.text.TextUtils;
 import android.widget.RemoteViews;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.service.MusicService;
 

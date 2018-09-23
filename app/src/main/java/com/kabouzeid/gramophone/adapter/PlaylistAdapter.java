@@ -15,8 +15,8 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.kabouzeid.appthemehelper.util.ATHUtil;
-import com.kabouzeid.gramophone.App;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.App;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.base.AbsMultiSelectAdapter;
 import com.kabouzeid.gramophone.adapter.base.MediaEntryViewHolder;
 import com.kabouzeid.gramophone.dialogs.ClearSmartPlaylistDialog;

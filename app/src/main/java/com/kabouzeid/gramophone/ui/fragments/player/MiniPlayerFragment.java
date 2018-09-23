@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.appthemehelper.util.ATHUtil;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.helper.MusicProgressViewUpdateHelper;
 import com.kabouzeid.gramophone.helper.PlayPauseButtonOnClickHandler;

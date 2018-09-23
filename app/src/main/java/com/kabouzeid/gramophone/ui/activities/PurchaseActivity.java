@@ -14,8 +14,8 @@ import android.widget.Toast;
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.TransactionDetails;
 import com.kabouzeid.appthemehelper.color.MaterialColor;
-import com.kabouzeid.gramophone.App;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.App;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 
 import java.lang.ref.WeakReference;

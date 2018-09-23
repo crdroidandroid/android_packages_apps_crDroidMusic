@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.ui.activities.MainActivity;
 
 /**

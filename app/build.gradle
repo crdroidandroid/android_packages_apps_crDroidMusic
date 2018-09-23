@@ -40,9 +40,9 @@ android {
         renderscriptTargetApi 27
         vectorDrawables.useSupportLibrary = true
 
-        applicationId 'com.kabouzeid.gramophone'
+        applicationId 'com.crdroid.music'
         versionCode 163
-        versionName '1.5.0 Mod'
+        versionName '9.0'
     }
 
     buildTypes {

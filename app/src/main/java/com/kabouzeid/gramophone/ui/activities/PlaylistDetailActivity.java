@@ -19,7 +19,7 @@ import com.h6ah4i.android.widget.advrecyclerview.animator.RefactoredDefaultItemA
 import com.h6ah4i.android.widget.advrecyclerview.draggable.RecyclerViewDragDropManager;
 import com.h6ah4i.android.widget.advrecyclerview.utils.WrapperAdapterUtils;
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.song.OrderablePlaylistSongAdapter;
 import com.kabouzeid.gramophone.adapter.song.PlaylistSongAdapter;
 import com.kabouzeid.gramophone.adapter.song.SongAdapter;

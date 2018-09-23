@@ -12,7 +12,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.M3UWriter;
 import com.kabouzeid.gramophone.model.Playlist;
 import com.kabouzeid.gramophone.model.PlaylistSong;
