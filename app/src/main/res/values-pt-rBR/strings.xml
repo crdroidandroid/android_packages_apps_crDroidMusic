@@ -157,7 +157,7 @@
     <string name="empty">Vazio</string>
     <string name="playlist_name_empty">Nome da Playlist</string>
     <string name="song">Música</string>
-    <string name="pref_summary_album_art_on_lockscreen">A imagem do álbum está sendo mostrada no bloqueio de tela. Você deve reiniciar o Phonograph para as mudanças fazerem efeito.</string>
+    <string name="pref_summary_album_art_on_lockscreen">A imagem do álbum está sendo mostrada no bloqueio de tela. Você deve reiniciar o crDroid Music para as mudanças fazerem efeito.</string>
     <string name="pref_summary_blurred_album_art">Esmaece a capa de álbum no bloqueio de tela. Pode causar problemas com aplicativos de terceiros e widgets.</string>
     <string name="pref_summary_classic_notification">Usar o design de notificação clássico.</string>
     <string name="pref_summary_colored_notification">"A notifica\u00e7\u00e3o \u00e9 colorida com a cor mais vibrante do \u00e1lbum."</string>
@@ -193,7 +193,7 @@
     <string name="permissions_denied">Permissões negadas.</string>
     <string name="permission_external_storage_denied">Permissão para acessar armazenamento externo negado.</string>
     <string name="support_development">Apoiar o desenvolvimento</string>
-    <string name="buy_pro">Habilitar versão Pro do Phonograph</string>
+    <string name="buy_pro">Habilitar versão Pro do crDroid Music</string>
     <string name="thank_you">Obrigado!</string>
     <string name="restored_previous_purchase_please_restart">Restituídas compras anteriores. Por favor, reinicie o aplicativo pra usufruir dos novos recursos.</string>
     <string name="version">Versão</string>
@@ -205,9 +205,9 @@
     <string name="report_bugs">Reportar bugs</string>
     <string name="report_bugs_summary">Reportar bugs ou pedir por novas funções.</string>
     <string name="translate">Traduzir</string>
-    <string name="translate_summary">Ajude a traduzir o Phonograph para sua língua nativa.</string>
+    <string name="translate_summary">Ajude a traduzir o crDroid Music para sua língua nativa.</string>
     <string name="rate_on_google_play">Nota</string>
-    <string name="rate_on_google_play_summary">Dê uma nota positiva no Google Play se você gosta do Phonograph.</string>
+    <string name="rate_on_google_play_summary">Dê uma nota positiva no Google Play se você gosta do crDroid Music.</string>
     <string name="donate">Doar</string>
     <string name="donate_summary">Se você acha que eu mereço ser pago pelo meu trabalho, pode me deixar algum dinheiro aqui.</string>
     <string name="aidan_follestad_summary">Pelo mecanismo de temas e algumas outras coisas ótimas.</string>
@@ -219,7 +219,7 @@
     <string name="up_next">Próximo</string>
     <string name="pref_title_now_playing_screen_appearance">Aparência</string>
     <string name="intro_label">Introdução</string>
-    <string name="welcome_to_phonograph">"Seja bem-vindo ao Phonograph, um lindo e leve player de música para Android. "</string>
+    <string name="welcome_to_phonograph">"Seja bem-vindo ao crDroid Music, um lindo e leve player de música para Android. "</string>
     <string name="open_playing_queue_instruction">Arraste para cima o card da tela de reprodução para mostrar a lista de reprodução completa.</string>
     <string name="rearrange_playing_queue_instruction">Mude as músicas de lugar na fila pressionando-as e arrastando-as de seu número de faixa.</string>
     <string name="library">Biblioteca</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">Não foi possível escanear  os arquivos em %d.</string>
     <string name="listing_files">Listando arquivos</string>
     <string name="new_start_directory">%s é a nova pasta inicial.</string>
-    <string name="app_widget_big_name">Phonograph - Grande</string>
-    <string name="app_widget_classic_name">Phonograph - Clássico</string>
-    <string name="app_widget_small_name">Phonograph - Pequeno</string>
-    <string name="app_widget_card_name">Phonograph - Cartão</string>
+    <string name="app_widget_big_name">Music - Grande</string>
+    <string name="app_widget_classic_name">Music - Clássico</string>
+    <string name="app_widget_small_name">Music - Pequeno</string>
+    <string name="app_widget_card_name">Music - Cartão</string>
     <string name="report_an_issue">Reportar alguma falha</string>
     <string name="bug_report_issue">Falha</string>
     <string name="login">Login</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">A notificação de reprodução fornece opções de pausar/continuar etc.</string>
     <string name="playing_notification_name">Notificação de reprodução</string>
     <string name="only_the_first_5_colors_available">Apenas as primeiras 5 cores estão disponíveis na versão grátis.</string>
-    <string name="black_theme_is_a_pro_feature">O tema escuro é um recurso da versão Pro do Phonograph.</string>
-    <string name="sleep_timer_is_a_pro_feature">Temporizador de soneca é um recurso da versão Pro do Phonograph</string>
-    <string name="folder_view_is_a_pro_feature">Visualização de pastas é um recurso da versão Pro do Phonograph.</string>
+    <string name="black_theme_is_a_pro_feature">O tema escuro é um recurso da versão Pro do crDroid Music.</string>
+    <string name="sleep_timer_is_a_pro_feature">Temporizador de soneca é um recurso da versão Pro do crDroid Music</string>
+    <string name="folder_view_is_a_pro_feature">Visualização de pastas é um recurso da versão Pro do crDroid Music.</string>
     <string name="restoring_purchase">Restituindo compra...</string>
     <string name="could_not_restore_purchase">Não foi possível restituir a compra.</string>
     <string name="purchase">Comprar</string>

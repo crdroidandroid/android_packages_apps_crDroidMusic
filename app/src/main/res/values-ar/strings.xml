@@ -189,7 +189,7 @@
     <string name="permissions_denied">تم رفض الصلاحيات.</string>
     <string name="permission_external_storage_denied">تم رفض صلاحية الوصول إلى الذاكرة الخارجية.</string>
     <string name="support_development">دعم التطوير</string>
-    <string name="buy_pro">شراء Phonograph Pro</string>
+    <string name="buy_pro">شراء crDroid Music Pro</string>
     <string name="thank_you">شكراً لك!</string>
     <string name="restored_previous_purchase_please_restart">تمت استعادة عملية الشراء السابقة. يرجى إعادة تشغيل التطبيق للاستفادة من جميع المميزات.</string>
     <string name="version">الإصدار</string>
@@ -201,9 +201,9 @@
     <string name="report_bugs">الإبلاغ عن مشاكل</string>
     <string name="report_bugs_summary">الإبلاغ عن مشاكل أو طلب ميزات جديدة.</string>
     <string name="translate">ترجمة</string>
-    <string name="translate_summary">ساعد في ترجمة Phonograph إلى لغتك الأم.</string>
+    <string name="translate_summary">ساعد في ترجمة crDroid Music إلى لغتك الأم.</string>
     <string name="rate_on_google_play">قيّم</string>
-    <string name="rate_on_google_play_summary">اترك تقييماً إيجابياً على Goole Play إذا أعجبك Phonograph.</string>
+    <string name="rate_on_google_play_summary">اترك تقييماً إيجابياً على Goole Play إذا أعجبك crDroid Music.</string>
     <string name="donate">تبرع</string>
     <string name="donate_summary">إذا كنت تعتقد أنني أستحق أجراً على عملي، يمكنك أن تترك لي بضع دولارات هنا.</string>
     <string name="aidan_follestad_summary">من أجل محرك التنسيقات وبعض الأشياء الرائعة الأخرى.</string>
@@ -215,7 +215,7 @@
     <string name="up_next">التالي</string>
     <string name="pref_title_now_playing_screen_appearance">المظهر</string>
     <string name="intro_label">المقدمة</string>
-    <string name="welcome_to_phonograph">"مرحباً بك في Phonograph، مشغل موسيقى جميل وخفيف للأندرويد. "</string>
+    <string name="welcome_to_phonograph">"مرحباً بك في crDroid Music، مشغل موسيقى جميل وخفيف للأندرويد. "</string>
     <string name="open_playing_queue_instruction">اسحب البطاقة في شاشة \"يتم تشغيله الآن\" لإظهار قائمة التشغيل بالكامل.</string>
     <string name="rearrange_playing_queue_instruction">إعادة ترتيب قائمة التشغيل عبر سحب الأغاني من أرقامها.</string>
     <string name="library">المكتبة</string>
@@ -231,10 +231,10 @@
     <string name="could_not_scan_files">تعذر فحص %d ملفات.</string>
     <string name="listing_files">جار إدراج الملفات</string>
     <string name="new_start_directory">%s هو مسار البداية الجديد.</string>
-    <string name="app_widget_big_name">Phonograph - كبير</string>
-    <string name="app_widget_classic_name">Phonograph - كلاسيكي</string>
-    <string name="app_widget_small_name">Phonograph - صغير</string>
-    <string name="app_widget_card_name">Phonograph - بطاقة</string>
+    <string name="app_widget_big_name">Music - كبير</string>
+    <string name="app_widget_classic_name">Music - كلاسيكي</string>
+    <string name="app_widget_small_name">Music - صغير</string>
+    <string name="app_widget_card_name">Music - بطاقة</string>
     <string name="report_an_issue">إبلاغ عن مشكلة</string>
     <string name="bug_report_issue">المشكلة</string>
     <string name="login">تسجيل دخول</string>
@@ -265,9 +265,9 @@
     <string name="playing_notification_description">إشعار التشغيل يوفر أزرار تحكم للتشغيل/الإيقاف المؤقت إلخ.</string>
     <string name="playing_notification_name">إشعار التشغيل</string>
     <string name="only_the_first_5_colors_available">فقط أول 5 ألوان هي المتوفرة في النسخة المجانية.</string>
-    <string name="black_theme_is_a_pro_feature">التنسيق الأسود هي ميزة في Phonograph Pro.</string>
-    <string name="sleep_timer_is_a_pro_feature">مؤقت النوم هي ميزة في Phonograph Pro</string>
-    <string name="folder_view_is_a_pro_feature">عرض المجلدات هي ميزة في Phonograph Pro.</string>
+    <string name="black_theme_is_a_pro_feature">التنسيق الأسود هي ميزة في crDroid Music Pro.</string>
+    <string name="sleep_timer_is_a_pro_feature">مؤقت النوم هي ميزة في crDroid Music Pro</string>
+    <string name="folder_view_is_a_pro_feature">عرض المجلدات هي ميزة في crDroid Music Pro.</string>
     <string name="restoring_purchase">جار استعادة عملية الشراء...</string>
     <string name="could_not_restore_purchase">لم يتم التمكن من استعادة عملية الشراء.</string>
     <string name="purchase">شراء</string>

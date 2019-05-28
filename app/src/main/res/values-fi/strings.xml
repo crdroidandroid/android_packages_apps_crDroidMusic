@@ -193,7 +193,7 @@
     <string name="permissions_denied">Sinulla ei ole oikeuksia tähän.</string>
     <string name="permission_external_storage_denied">Oikeus päästä muistikortille evätty.</string>
     <string name="support_development">Tue kehitystä</string>
-    <string name="buy_pro">Osta Phonograph Pro</string>
+    <string name="buy_pro">Osta crDroid Music Pro</string>
     <string name="thank_you">Kiitos!</string>
     <string name="restored_previous_purchase_please_restart">Palautettiin aiempi ostos. Ole hyvä ja käynnistä sovellus uudelleen saadaksesi hyödyn uusista ominaisuuksista.</string>
     <string name="version">Versio</string>
@@ -205,9 +205,9 @@
     <string name="report_bugs">Raportoi bugeja</string>
     <string name="report_bugs_summary">Raportoi bugeja tai ehdota uusia ominaisuuksia.</string>
     <string name="translate">Käännä</string>
-    <string name="translate_summary">Auta kääntämään Phonograph sinun äidinkielellesi.</string>
+    <string name="translate_summary">Auta kääntämään crDroid Music sinun äidinkielellesi.</string>
     <string name="rate_on_google_play">Arvostele</string>
-    <string name="rate_on_google_play_summary">Jos pidät Phonographista, jätä sille positiivinen arvostelu Google Play -kaupassa.</string>
+    <string name="rate_on_google_play_summary">Jos pidät crDroid Musicista, jätä sille positiivinen arvostelu Google Play -kaupassa.</string>
     <string name="donate">Lahjoita</string>
     <string name="donate_summary">Jos sinun mielestäsi minun kuuluisi saada korvausta työstäni, voit antaa minulle muutaman dollarin täällä.</string>
     <string name="aidan_follestad_summary">Teemamoottorista ja muutamista muista hienoista jutuista.</string>
@@ -219,7 +219,7 @@
     <string name="up_next">Seuraavaksi</string>
     <string name="pref_title_now_playing_screen_appearance">Ulkonäkö</string>
     <string name="intro_label">Esittely</string>
-    <string name="welcome_to_phonograph">"Tervetuloa Phonographiin, kauniiseen ja kevyeen musiikkisoittimeen Androidille. "</string>
+    <string name="welcome_to_phonograph">"Tervetuloa crDroid Musiciin, kauniiseen ja kevyeen musiikkisoittimeen Androidille. "</string>
     <string name="open_playing_queue_instruction">Vedä korttia Toistetaan parhaillaan -ikkunassa ylös, nähdäksesi koko toistojonon.</string>
     <string name="rearrange_playing_queue_instruction">Järjestä toistojonoa vetämällä kappaletta sen raitanumerosta.</string>
     <string name="library">Kirjasto</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">Ei voitu skannata %d tiedostoa.</string>
     <string name="listing_files">Listataan tiedostoja</string>
     <string name="new_start_directory">%s on uusi aloituskansio.</string>
-    <string name="app_widget_big_name">Phonograph - Iso</string>
-    <string name="app_widget_classic_name">Phonograph - Klassikko</string>
-    <string name="app_widget_small_name">Phonograph - Pieni</string>
-    <string name="app_widget_card_name">Phonograph - Kortti</string>
+    <string name="app_widget_big_name">Music - Iso</string>
+    <string name="app_widget_classic_name">Music - Klassikko</string>
+    <string name="app_widget_small_name">Music - Pieni</string>
+    <string name="app_widget_card_name">Music - Kortti</string>
     <string name="report_an_issue">Raportoi ongelma</string>
     <string name="bug_report_issue">Ongelma</string>
     <string name="login">Kirjaudu sisään</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">Toistoilmoitus sisältää nappeja musiikin toistolle/pysäyttämiselle jne.</string>
     <string name="playing_notification_name">Toistoilmoitus</string>
     <string name="only_the_first_5_colors_available">Sovelluksen ilmaisversio on rajoitettu 5 ensimmäiseen värivaihtoehtoon.</string>
-    <string name="black_theme_is_a_pro_feature">Musta teema on Phonograph Pro:n ominaisuus.</string>
-    <string name="sleep_timer_is_a_pro_feature">Herätyskello on Phonograph Pro:n ominaisuus.</string>
-    <string name="folder_view_is_a_pro_feature">Kansionäkymä on Phonograph Pro:n ominaisuus.</string>
+    <string name="black_theme_is_a_pro_feature">Musta teema on crDroid Music Pro:n ominaisuus.</string>
+    <string name="sleep_timer_is_a_pro_feature">Herätyskello on crDroid Music Pro:n ominaisuus.</string>
+    <string name="folder_view_is_a_pro_feature">Kansionäkymä on crDroid Music Pro:n ominaisuus.</string>
     <string name="restoring_purchase">Palautetaan ostoa...</string>
     <string name="could_not_restore_purchase">Ei voitu palauttaa ostoa.</string>
     <string name="purchase">Osta</string>
