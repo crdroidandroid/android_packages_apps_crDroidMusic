@@ -193,7 +193,7 @@
     <string name="permissions_denied">İzinler reddedildi.</string>
     <string name="permission_external_storage_denied">Harici depolamaya erişim izin reddedildi.</string>
     <string name="support_development">Geliştirmeyi destekleyin</string>
-    <string name="buy_pro">Phonograph Pro\'yu Satın Alın</string>
+    <string name="buy_pro">Music\'yu Satın Alın</string>
     <string name="thank_you">Teşekkürler!</string>
     <string name="restored_previous_purchase_please_restart">Önceki satın alma geri yüklendi. Tüm özellikleri kullanabilmek için lütfen uygulamayı tekrar başlatın.</string>
     <string name="version">Sürüm</string>
@@ -205,9 +205,9 @@
     <string name="report_bugs">Hataları raporlayın</string>
     <string name="report_bugs_summary">Hataları raporlayın ya da yeni özellikler talep edin.</string>
     <string name="translate">Çeviri</string>
-    <string name="translate_summary">Phonograph\'ı kendi dilinize çevirmek için yardımcı olun.</string>
+    <string name="translate_summary">Music\'ı kendi dilinize çevirmek için yardımcı olun.</string>
     <string name="rate_on_google_play">Oy ver</string>
-    <string name="rate_on_google_play_summary">Eğer Phonograph\'ı beğendiyseniz Google Play\'de olumlu oy verin.</string>
+    <string name="rate_on_google_play_summary">Eğer crDroid Music\'ı beğendiyseniz Google Play\'de olumlu oy verin.</string>
     <string name="donate">Bağış yapın</string>
     <string name="donate_summary">Eğer çalışmalarım için bana bağışta bulunmak istiyorsanız, buradan birkaç lira bırakabilirsiniz.</string>
     <string name="aidan_follestad_summary">Tema motoru ve diğer muhteşem özellikler için.</string>
@@ -219,7 +219,7 @@
     <string name="up_next">Sırada olanlar</string>
     <string name="pref_title_now_playing_screen_appearance">Görünüm</string>
     <string name="intro_label">Tanıtım</string>
-    <string name="welcome_to_phonograph">"Phonograph'a Hoşgeldiniz, Android için muhteşem bir müzik çalar. "</string>
+    <string name="welcome_to_phonograph">"crDroid Music'a Hoşgeldiniz, Android için muhteşem bir müzik çalar. "</string>
     <string name="open_playing_queue_instruction">Şuan çalınıyor ekranı kartını yukarı kaydırmak çalma sırasının tamamını ortaya çıkarır.</string>
     <string name="rearrange_playing_queue_instruction">Çalma sırasını yeniden düzenlemek için şarkının parça numarasını kaydırın</string>
     <string name="library">Kitaplık</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">%d dosya taranamadı.</string>
     <string name="listing_files">Dosyaları listele</string>
     <string name="new_start_directory">%s yeni bir başlangıç dizini.</string>
-    <string name="app_widget_big_name">Phonograph - Büyük</string>
-    <string name="app_widget_classic_name">Phonograph - Klasik</string>
-    <string name="app_widget_small_name">Phonograph - Küçük</string>
-    <string name="app_widget_card_name">Phonograph - Kart</string>
+    <string name="app_widget_big_name">Music - Büyük</string>
+    <string name="app_widget_classic_name">Music - Klasik</string>
+    <string name="app_widget_small_name">Music - Küçük</string>
+    <string name="app_widget_card_name">Music - Kart</string>
     <string name="report_an_issue">Sorun bildir</string>
     <string name="bug_report_issue">Sorun</string>
     <string name="login">Oturum aç</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">Çalma bildirimi, başlat/duraklat vb. işlemleri sağlar</string>
     <string name="playing_notification_name">Çalma bildirimi</string>
     <string name="only_the_first_5_colors_available">Ücretsiz sürümde sadece ilk 5 renk mevcuttur.</string>
-    <string name="black_theme_is_a_pro_feature">Siyah tema, Phonograph Pro özelliğidir.</string>
-    <string name="sleep_timer_is_a_pro_feature">Uyku zamanlayıcı bir Phonograph Pro özelliğidir.</string>
-    <string name="folder_view_is_a_pro_feature">Klasör görünümü bir Phonograph Pro özelliğidir.</string>
+    <string name="black_theme_is_a_pro_feature">Siyah tema, crDroid Music özelliğidir.</string>
+    <string name="sleep_timer_is_a_pro_feature">Uyku zamanlayıcı bir crDroid Music özelliğidir.</string>
+    <string name="folder_view_is_a_pro_feature">Klasör görünümü bir crDroid Music özelliğidir.</string>
     <string name="restoring_purchase">Satın alma geri yükleniyor...</string>
     <string name="could_not_restore_purchase">Satın alma geri yüklenemedi.</string>
     <string name="purchase">Satın Al</string>
@@ -301,5 +301,5 @@
     <string name="sort_order_year">Yıl</string>
     <string name="finish_current_music_sleep_timer">Son şarkıyı bitir</string>
     <string name="dialog_ringtone_title">Zil sesi olarak ayarla</string>
-    <string name="dialog_ringtone_message">Phonograph\'ın ses ayarlarını değiştirmesine izin ver</string>
+    <string name="dialog_ringtone_message">Music\'ın ses ayarlarını değiştirmesine izin ver</string>
 </resources>

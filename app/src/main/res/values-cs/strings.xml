@@ -193,7 +193,7 @@
     <string name="permissions_denied">"Oprávnění zamítnuta. "</string>
     <string name="permission_external_storage_denied">"Přístup k otevření externího úložiště zamítnut. "</string>
     <string name="support_development">Podpořte vývoj</string>
-    <string name="buy_pro">Zakoupit Phonograph Pro</string>
+    <string name="buy_pro">Zakoupit crDroid Music</string>
     <string name="thank_you">"Díky! "</string>
     <string name="restored_previous_purchase_please_restart">Předchozí nákup byl obnoven. Restartujte aplikaci pro využití všech funkcí.</string>
     <string name="version">Verze</string>
@@ -205,9 +205,9 @@
     <string name="report_bugs">Ohlásit chybu</string>
     <string name="report_bugs_summary">"Nahlásit chyby nebo požádat o nové funkce. "</string>
     <string name="translate">Překládejte</string>
-    <string name="translate_summary">"Pomozte nám přeložit Phonograph do vašeho mateřského jazyka. "</string>
+    <string name="translate_summary">"Pomozte nám přeložit crDroid Music do vašeho mateřského jazyka. "</string>
     <string name="rate_on_google_play">Ohodnotit</string>
-    <string name="rate_on_google_play_summary">Pokud máte Phonograph rádi, zanechte pozitivní hodnocení na Google Play.</string>
+    <string name="rate_on_google_play_summary">Pokud máte crDroid Music rádi, zanechte pozitivní hodnocení na Google Play.</string>
     <string name="donate">"Přispět "</string>
     <string name="donate_summary">Pokud si myslíte, že si za svou práci zasloužím dostat zaplaceno, tady mi můžete nechat pár korun.</string>
     <string name="aidan_follestad_summary">Za motivy a jiné další super věci.</string>
@@ -219,7 +219,7 @@
     <string name="up_next">"Další "</string>
     <string name="pref_title_now_playing_screen_appearance">Vzhled</string>
     <string name="intro_label">"Úvod "</string>
-    <string name="welcome_to_phonograph">"Vítejte ve Phonographu, krásném a lehkém přehrávači pro Android. "</string>
+    <string name="welcome_to_phonograph">"Vítejte ve crDroid Musicu, krásném a lehkém přehrávači pro Android. "</string>
     <string name="open_playing_queue_instruction">"Potáhněte kartu v obrazovce Právě přehrávané nahoru pro zobrazení celé fronty přehrávání. "</string>
     <string name="rearrange_playing_queue_instruction">"Změňte pořadí fronty přetažením skladby za její číslo. "</string>
     <string name="library">"Knihovna "</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">Nelze skenovat %d souborů.</string>
     <string name="listing_files">Načítání souborů</string>
     <string name="new_start_directory">%s je nová domovská složka.</string>
-    <string name="app_widget_big_name">Phonograph - Velký</string>
-    <string name="app_widget_classic_name">Phonograph - Klasický</string>
-    <string name="app_widget_small_name">Phonograph - Malý</string>
-    <string name="app_widget_card_name">Phonograph - Karta</string>
+    <string name="app_widget_big_name">Music - Velký</string>
+    <string name="app_widget_classic_name">Music - Klasický</string>
+    <string name="app_widget_small_name">Music - Malý</string>
+    <string name="app_widget_card_name">Music - Karta</string>
     <string name="report_an_issue">Nahlásit problém</string>
     <string name="bug_report_issue">Problém</string>
     <string name="login">Přihlášení</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">Oznámení o přehrávání obsahuje akce pro přehrávání/pauzu atd.</string>
     <string name="playing_notification_name">Oznámení o přehrávání</string>
     <string name="only_the_first_5_colors_available">Ve verzi zdarma je dostupných pouze prvních 5 barev.</string>
-    <string name="black_theme_is_a_pro_feature">Černý motiv je funkce Phonograph Pro.</string>
-    <string name="sleep_timer_is_a_pro_feature">Časovač vypnutí je funkce Phonograph Pro.</string>
-    <string name="folder_view_is_a_pro_feature">Prohlížení složek je funkce Phonograph Pro.</string>
+    <string name="black_theme_is_a_pro_feature">Černý motiv je funkce crDroid Music.</string>
+    <string name="sleep_timer_is_a_pro_feature">Časovač vypnutí je funkce crDroid Music.</string>
+    <string name="folder_view_is_a_pro_feature">Prohlížení složek je funkce crDroid Music.</string>
     <string name="restoring_purchase">Obnovení nákupu...</string>
     <string name="could_not_restore_purchase">Nákup nelze obnovit.</string>
     <string name="purchase">Zakoupit</string>
@@ -301,5 +301,5 @@
     <string name="sort_order_year">Rok</string>
     <string name="finish_current_music_sleep_timer">Dokončit poslední skladbu</string>
     <string name="dialog_ringtone_title">Nastavit vyzváněcí tón</string>
-    <string name="dialog_ringtone_message">Povolit aplikaci Phonograph měnit nastavení zvuku</string>
+    <string name="dialog_ringtone_message">Povolit aplikaci crDroid Music měnit nastavení zvuku</string>
 </resources>

@@ -193,7 +193,7 @@
     <string name="permissions_denied">Permissões negadas.</string>
     <string name="permission_external_storage_denied">Permissão para acessar armazenamento externo negado.</string>
     <string name="support_development">Apoiar o desenvolvimento</string>
-    <string name="buy_pro">Habilitar versão Pro do Phonograph</string>
+    <string name="buy_pro">Habilitar versão Pro do crDroid Music</string>
     <string name="thank_you">Obrigado!</string>
     <string name="restored_previous_purchase_please_restart">Compra anterior restaurada. Por favor, reinicie o aplicativo para fazer uso de todos os recursos.</string>
     <string name="version">Versão</string>
@@ -205,9 +205,9 @@
     <string name="report_bugs">Reportar bugs</string>
     <string name="report_bugs_summary">Reportar bugs ou pedir por novas funções.</string>
     <string name="translate">Traduzir</string>
-    <string name="translate_summary">Ajude a traduzir o Phonograph para seu idioma.</string>
+    <string name="translate_summary">Ajude a traduzir o crDroid Music para seu idioma.</string>
     <string name="rate_on_google_play">Nota</string>
-    <string name="rate_on_google_play_summary">Dê uma nota positiva no Google Play se você gosta do Phonograph.</string>
+    <string name="rate_on_google_play_summary">Dê uma nota positiva no Google Play se você gosta do crDroid Music.</string>
     <string name="donate">Doar</string>
     <string name="donate_summary">Se você acha que eu mereço ser pago pelo meu trabalho, pode me deixar algum dinheiro aqui.</string>
     <string name="aidan_follestad_summary">Pelo mecanismo de temas e algumas outras coisas ótimas.</string>
@@ -219,7 +219,7 @@
     <string name="up_next">A seguir</string>
     <string name="pref_title_now_playing_screen_appearance">Aparência</string>
     <string name="intro_label">Introdução</string>
-    <string name="welcome_to_phonograph">"Seja bem-vindo ao Phonograph, um lindo e leve player de música para Android. "</string>
+    <string name="welcome_to_phonograph">"Seja bem-vindo ao crDroid Music, um lindo e leve player de música para Android. "</string>
     <string name="open_playing_queue_instruction">Arraste para cima o cartão da tela de reproduzindo agora para mostrar a fila de reprodução completa.</string>
     <string name="rearrange_playing_queue_instruction">Reorganizar a fila de reprodução arrastando uma música de seu número de música.</string>
     <string name="library">Biblioteca</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">Não foi possível escanear %d arquivos.</string>
     <string name="listing_files">Listando arquivos</string>
     <string name="new_start_directory">%s é o novo diretório inicial.</string>
-    <string name="app_widget_big_name">Phonograph - Grande</string>
-    <string name="app_widget_classic_name">Phonograph - Clássico</string>
-    <string name="app_widget_small_name">Phonograph - Pequeno</string>
-    <string name="app_widget_card_name">Phonograph - Cartão</string>
+    <string name="app_widget_big_name">Music - Grande</string>
+    <string name="app_widget_classic_name">Music - Clássico</string>
+    <string name="app_widget_small_name">Music - Pequeno</string>
+    <string name="app_widget_card_name">Music - Cartão</string>
     <string name="report_an_issue">Reportar alguma falha</string>
     <string name="bug_report_issue">Falha</string>
     <string name="login">Entrar</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">A notificação de reprodução fornece opções de pausar/continuar etc.</string>
     <string name="playing_notification_name">Notificação de reprodução</string>
     <string name="only_the_first_5_colors_available">Apenas as primeiras 5 cores estão disponíveis na versão grátis.</string>
-    <string name="black_theme_is_a_pro_feature">O tema escuro é um recurso da versão Pro do Phonograph.</string>
-    <string name="sleep_timer_is_a_pro_feature">O cronômetro é um recurso do Phonograph Pro</string>
-    <string name="folder_view_is_a_pro_feature">A exibição de pastas é um recurso do Phonograph Pro.</string>
+    <string name="black_theme_is_a_pro_feature">O tema escuro é um recurso da versão Pro do crDroid Music.</string>
+    <string name="sleep_timer_is_a_pro_feature">O cronômetro é um recurso do crDroid Music</string>
+    <string name="folder_view_is_a_pro_feature">A exibição de pastas é um recurso do crDroid Music.</string>
     <string name="restoring_purchase">Restaurando a compra...</string>
     <string name="could_not_restore_purchase">Não foi possível restaurar a compra.</string>
     <string name="purchase">Compra</string>
@@ -301,5 +301,5 @@
     <string name="sort_order_year">Ano</string>
     <string name="finish_current_music_sleep_timer">Finalizar última música</string>
     <string name="dialog_ringtone_title">Definir toque</string>
-    <string name="dialog_ringtone_message">Permitir que o Phonograph modifique as configurações de áudio</string>
+    <string name="dialog_ringtone_message">Permitir que o crDroid Music modifique as configurações de áudio</string>
 </resources>

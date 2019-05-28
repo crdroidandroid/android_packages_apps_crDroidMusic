@@ -193,7 +193,7 @@
     <string name="permissions_denied">В разрешениях отказано.</string>
     <string name="permission_external_storage_denied">В разрешении на доступ к внешнему хранилищу отказано.</string>
     <string name="support_development">Поддержать разработку</string>
-    <string name="buy_pro">Купить Phonograph Pro</string>
+    <string name="buy_pro">Купить crDroid Music</string>
     <string name="thank_you">Спасибо!</string>
     <string name="restored_previous_purchase_please_restart">Восстановлена предыдущая покупка. Пожалуйста, перезагрузите приложение, чтобы использовать все функции.</string>
     <string name="version">Версия</string>
@@ -205,7 +205,7 @@
     <string name="report_bugs">Отправить отчёт об ошибке</string>
     <string name="report_bugs_summary">Сообщить об ошибках или предложить новые функции.</string>
     <string name="translate">Перевести</string>
-    <string name="translate_summary">Помогите перевести Phonograph на ваш родной язык.</string>
+    <string name="translate_summary">Помогите перевести crDroid Music на ваш родной язык.</string>
     <string name="rate_on_google_play">Оценить</string>
     <string name="rate_on_google_play_summary">Если вам понравилось приложение, оставьте положительный отзыв в Google Play.</string>
     <string name="donate">Пожертвовать</string>
@@ -219,7 +219,7 @@
     <string name="up_next">Далее</string>
     <string name="pref_title_now_playing_screen_appearance">Вид экрана воспроизведения</string>
     <string name="intro_label">Вступление</string>
-    <string name="welcome_to_phonograph">"Добро пожаловать в Phonograph, красивый и лёгкий плеер для Android"</string>
+    <string name="welcome_to_phonograph">"Добро пожаловать в crDroid Music, красивый и лёгкий плеер для Android"</string>
     <string name="open_playing_queue_instruction">Проведите по карточке на экране воспроизведения, чтобы просмотреть очередь</string>
     <string name="rearrange_playing_queue_instruction">Редактируйте очередь воспроизведения, перетаскивая песни за их номер</string>
     <string name="library">"Библиотека "</string>
@@ -235,10 +235,10 @@
     <string name="could_not_scan_files">Не удалось просканировать %d файлов.</string>
     <string name="listing_files">Список файлов</string>
     <string name="new_start_directory">%s новая начальная директория.</string>
-    <string name="app_widget_big_name">Phonograph — Большой</string>
-    <string name="app_widget_classic_name">Phonograph — Классический</string>
-    <string name="app_widget_small_name">Phonograph — Маленький</string>
-    <string name="app_widget_card_name">Phonograph — Карточка</string>
+    <string name="app_widget_big_name">Music — Большой</string>
+    <string name="app_widget_classic_name">Music — Классический</string>
+    <string name="app_widget_small_name">Music — Маленький</string>
+    <string name="app_widget_card_name">Music — Карточка</string>
     <string name="report_an_issue">Сообщить об ошибке</string>
     <string name="bug_report_issue">Ошибка</string>
     <string name="login">Войти</string>
@@ -269,9 +269,9 @@
     <string name="playing_notification_description">С помощью уведомления о воспроизведении можно воспроизводить/ставить на паузу и т.д.</string>
     <string name="playing_notification_name">Уведомление о воспроизведении</string>
     <string name="only_the_first_5_colors_available">Только первые 5 цветов доступны в бесплатной версии.</string>
-    <string name="black_theme_is_a_pro_feature">Чёрная тема это функция Phonograph Pro.</string>
-    <string name="sleep_timer_is_a_pro_feature">Таймер сна это функция Phonograph Pro.</string>
-    <string name="folder_view_is_a_pro_feature">Просмотр по папкам это функция Phonograph Pro.</string>
+    <string name="black_theme_is_a_pro_feature">Чёрная тема это функция crDroid Music.</string>
+    <string name="sleep_timer_is_a_pro_feature">Таймер сна это функция crDroid Music.</string>
+    <string name="folder_view_is_a_pro_feature">Просмотр по папкам это функция crDroid Music.</string>
     <string name="restoring_purchase">Восстановление покупки...</string>
     <string name="could_not_restore_purchase">Невозможно восстановить покупку.</string>
     <string name="purchase">Купить</string>
