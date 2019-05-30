@@ -5,7 +5,7 @@ BUILD_PATH="$ROOT_PATH/app/build/outputs/apk/release"
 APP_NAME="crDroidMusic"
 
 # Build app
-./gradlew assembleRelease
+./gradlew assembleRelease --info
 
 #sign and zipalign
 java -jar sign.jar $BUILD_PATH/app-release-unsigned.apk
