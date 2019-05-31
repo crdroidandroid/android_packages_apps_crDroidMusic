@@ -92,7 +92,8 @@
             android:minHeight="@dimen/md_listitem_height"
             android:orientation="horizontal"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:paddingRight="16dp"
+            android:visibility="gone" >
 
             <com.kabouzeid.gramophone.views.IconImageView
                 android:id="@+id/icon_changelog"
@@ -154,7 +155,8 @@
             android:minHeight="@dimen/md_listitem_height"
             android:orientation="horizontal"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:paddingRight="16dp"
+            android:visibility="gone">
 
             <com.kabouzeid.gramophone.views.IconImageView
                 android:id="@+id/icon_github"
