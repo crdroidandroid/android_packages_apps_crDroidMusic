@@ -22,15 +22,12 @@ public class UpdateToastMediaScannerCompletionListener implements MediaScannerCo
     private final String scannedFiles;
     private final String couldNotScanFiles;
 
-    private Toast toast;
     private final WeakReference<Activity> activityWeakReference;
 
-    @SuppressLint("ShowToast")
     public UpdateToastMediaScannerCompletionListener(Activity activity, String[] toBeScanned) {
         this.toBeScanned = toBeScanned;
         scannedFiles = activity.getString(R.string.scanned_files);
         couldNotScanFiles = activity.getString(R.string.could_not_scan_files);
-        toast = Toast.makeText(activity.getApplicationContext(), "", Toast.LENGTH_SHORT);
         activityWeakReference = new WeakReference<>(activity);
     }
 
@@ -45,8 +42,7 @@ public class UpdateToastMediaScannerCompletionListener implements MediaScannerCo
                     scanned++;
                 }
                 String text = " " + String.format(scannedFiles, scanned, toBeScanned.length) + (failed > 0 ? " " + String.format(couldNotScanFiles, failed) : "");
-                toast.setText(text);
-                toast.show();
+                Toast.makeText(activity.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
             });
         }
     }
