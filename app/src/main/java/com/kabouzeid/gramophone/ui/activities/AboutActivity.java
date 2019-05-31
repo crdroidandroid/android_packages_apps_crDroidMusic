@@ -17,10 +17,9 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.internal.ThemeSingleton;
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.App;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.App;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
-import com.kabouzeid.gramophone.dialogs.DonationsDialog;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 import com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity;
 
@@ -76,8 +75,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     LinearLayout visitWebsite;
     @BindView(R.id.translate)
     LinearLayout translate;
-    @BindView(R.id.donate)
-    LinearLayout donate;
     @BindView(R.id.rate_on_google_play)
     LinearLayout rateOnGooglePlay;
     @BindView(R.id.aidan_follestad_git_hub)
@@ -138,7 +135,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
         writeAnEmail.setOnClickListener(this);
         translate.setOnClickListener(this);
         rateOnGooglePlay.setOnClickListener(this);
-        donate.setOnClickListener(this);
         aidanFollestadGitHub.setOnClickListener(this);
         michaelCookWebsite.setOnClickListener(this);
         maartenCorpelWebsite.setOnClickListener(this);
@@ -160,7 +156,7 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
 
     private static String getCurrentVersionName(@NonNull final Context context) {
         try {
-            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName + (App.isProVersion() ? " Pro" : "");
+            return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
@@ -191,12 +187,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
             openUrl(TRANSLATE);
         } else if (v == rateOnGooglePlay) {
             openUrl(RATE_ON_GOOGLE_PLAY);
-        } else if (v == donate) {
-            if (App.isProVersion()) {
-                DonationsDialog.create().show(getSupportFragmentManager(), "DONATION_DIALOG");
-            } else {
-                startActivity(new Intent(this, PurchaseActivity.class));
-            }
         } else if (v == aidanFollestadGitHub) {
             openUrl(AIDAN_FOLLESTAD_GITHUB);
         } else if (v == michaelCookWebsite) {

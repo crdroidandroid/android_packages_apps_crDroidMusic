@@ -27,8 +27,8 @@ import com.bumptech.glide.Glide;
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.appthemehelper.util.ATHUtil;
 import com.kabouzeid.appthemehelper.util.NavigationViewUtil;
-import com.kabouzeid.gramophone.App;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.App;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
 import com.kabouzeid.gramophone.dialogs.ScanMediaFolderChooserDialog;
 import com.kabouzeid.gramophone.glide.SongGlideRequest;
@@ -96,29 +96,9 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
         if (!checkShowIntro()) {
             showChangelog();
         }
-
-        App.setOnProVersionChangedListener(() -> {
-            // called if the cached value was outdated (should be a rare event)
-            checkSetUpPro();
-            if (!App.isProVersion() && PreferenceUtil.getInstance(MainActivity.this).getLastMusicChooser() == FOLDERS) {
-                setMusicChooser(FOLDERS); // shows the purchase activity and switches to LIBRARY
-            }
-        });
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        App.setOnProVersionChangedListener(null);
     }
 
     private void setMusicChooser(int key) {
-        if (!App.isProVersion() && key == FOLDERS) {
-            Toast.makeText(this, R.string.folder_view_is_a_pro_feature, Toast.LENGTH_LONG).show();
-            startActivity(new Intent(this, PurchaseActivity.class));
-            key = LIBRARY;
-        }
-
         PreferenceUtil.getInstance(this).setLastMusicChooser(key);
         switch (key) {
             case LIBRARY:
@@ -182,7 +162,6 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
                     new Handler().postDelayed(() -> setMusicChooser(FOLDERS), 200);
                     break;
                 case R.id.buy_pro:
-                    new Handler().postDelayed(() -> startActivity(new Intent(MainActivity.this, PurchaseActivity.class)), 200);
                     break;
                 case R.id.action_scan:
                     new Handler().postDelayed(() -> {
@@ -202,7 +181,7 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
     }
 
     private void checkSetUpPro() {
-        navigationView.getMenu().setGroupVisible(R.id.navigation_drawer_menu_category_buy_pro, !App.isProVersion());
+        navigationView.getMenu().setGroupVisible(R.id.navigation_drawer_menu_category_buy_pro, false);
     }
 
     private void setUpDrawerLayout() {

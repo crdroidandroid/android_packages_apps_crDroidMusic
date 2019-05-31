@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.pm.ShortcutInfo;
 import android.os.Build;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.appshortcuts.AppShortcutIconGenerator;
 import com.kabouzeid.gramophone.appshortcuts.AppShortcutLauncherActivity;
 

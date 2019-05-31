@@ -11,7 +11,7 @@ import androidx.core.graphics.drawable.IconCompat;
 import android.util.TypedValue;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.util.ImageUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 

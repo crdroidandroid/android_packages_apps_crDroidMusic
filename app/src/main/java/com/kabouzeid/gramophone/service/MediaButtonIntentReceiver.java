@@ -27,8 +27,6 @@ import android.view.KeyEvent;
 
 import androidx.core.content.ContextCompat;
 
-import com.kabouzeid.gramophone.BuildConfig;
-
 /**
  * Used to control headset playback.
  * Single press: pause/resume
@@ -36,7 +34,7 @@ import com.kabouzeid.gramophone.BuildConfig;
  * Triple press: previous track
  */
 public class MediaButtonIntentReceiver extends BroadcastReceiver {
-    private static final boolean DEBUG = BuildConfig.DEBUG;
+    private static final boolean DEBUG = false;
     public static final String TAG = MediaButtonIntentReceiver.class.getSimpleName();
 
     private static final int MSG_HEADSET_DOUBLE_CLICK_TIMEOUT = 2;

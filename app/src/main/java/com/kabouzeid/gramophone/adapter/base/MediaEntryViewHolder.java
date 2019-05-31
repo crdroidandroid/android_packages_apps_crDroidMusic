@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
