@@ -5,7 +5,7 @@ import android.os.Parcel;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.model.AbsCustomPlaylist;
 
 /**
