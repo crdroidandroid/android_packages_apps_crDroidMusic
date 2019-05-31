@@ -38,23 +38,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     private static String TWITTER = "https://twitter.com/swiftkarim";
     private static String WEBSITE = "https://kabouzeid.com/";
 
-    private static String TRANSLATE = "https://phonograph.oneskyapp.com/collaboration/project?id=26521";
-    private static String RATE_ON_GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone";
-
-    private static String AIDAN_FOLLESTAD_GITHUB = "https://github.com/afollestad";
-
-    private static String MICHAEL_COOK_WEBSITE = "https://cookicons.co/";
-
-    private static String MAARTEN_CORPEL_WEBSITE = "https://maartencorpel.com/";
-    private static String MAARTEN_CORPEL_TWITTER = "https://twitter.com/maartencorpel";
-
-    private static String ALEKSANDAR_TESIC_TWITTER = "https://twitter.com/djsalezmaj";
-
-    private static String EUGENE_CHEUNG_GITHUB = "https://github.com/arkon";
-    private static String EUGENE_CHEUNG_WEBSITE = "https://echeung.me/";
-
-    private static String ADRIAN_TWITTER = "https://twitter.com/froschgames";
-
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.app_version)
@@ -73,26 +56,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     LinearLayout forkOnGitHub;
     @BindView(R.id.visit_website)
     LinearLayout visitWebsite;
-    @BindView(R.id.translate)
-    LinearLayout translate;
-    @BindView(R.id.rate_on_google_play)
-    LinearLayout rateOnGooglePlay;
-    @BindView(R.id.aidan_follestad_git_hub)
-    AppCompatButton aidanFollestadGitHub;
-    @BindView(R.id.michael_cook_website)
-    AppCompatButton michaelCookWebsite;
-    @BindView(R.id.maarten_corpel_website)
-    AppCompatButton maartenCorpelWebsite;
-    @BindView(R.id.maarten_corpel_twitter)
-    AppCompatButton maartenCorpelTwitter;
-    @BindView(R.id.aleksandar_tesic_twitter)
-    AppCompatButton aleksandarTesicTwitter;
-    @BindView(R.id.eugene_cheung_git_hub)
-    AppCompatButton eugeneCheungGitHub;
-    @BindView(R.id.eugene_cheung_website)
-    AppCompatButton eugeneCheungWebsite;
-    @BindView(R.id.adrian_twitter)
-    AppCompatButton adrianTwitter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,16 +96,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
         forkOnGitHub.setOnClickListener(this);
         visitWebsite.setOnClickListener(this);
         writeAnEmail.setOnClickListener(this);
-        translate.setOnClickListener(this);
-        rateOnGooglePlay.setOnClickListener(this);
-        aidanFollestadGitHub.setOnClickListener(this);
-        michaelCookWebsite.setOnClickListener(this);
-        maartenCorpelWebsite.setOnClickListener(this);
-        maartenCorpelTwitter.setOnClickListener(this);
-        aleksandarTesicTwitter.setOnClickListener(this);
-        eugeneCheungGitHub.setOnClickListener(this);
-        eugeneCheungWebsite.setOnClickListener(this);
-        adrianTwitter.setOnClickListener(this);
     }
 
     @Override
@@ -183,26 +136,6 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
             intent.putExtra(Intent.EXTRA_EMAIL, "contact@kabouzeid.com");
             intent.putExtra(Intent.EXTRA_SUBJECT, "Phonograph");
             startActivity(Intent.createChooser(intent, "E-Mail"));
-        } else if (v == translate) {
-            openUrl(TRANSLATE);
-        } else if (v == rateOnGooglePlay) {
-            openUrl(RATE_ON_GOOGLE_PLAY);
-        } else if (v == aidanFollestadGitHub) {
-            openUrl(AIDAN_FOLLESTAD_GITHUB);
-        } else if (v == michaelCookWebsite) {
-            openUrl(MICHAEL_COOK_WEBSITE);
-        } else if (v == maartenCorpelWebsite) {
-            openUrl(MAARTEN_CORPEL_WEBSITE);
-        } else if (v == maartenCorpelTwitter) {
-            openUrl(MAARTEN_CORPEL_TWITTER);
-        } else if (v == aleksandarTesicTwitter) {
-            openUrl(ALEKSANDAR_TESIC_TWITTER);
-        } else if (v == eugeneCheungGitHub) {
-            openUrl(EUGENE_CHEUNG_GITHUB);
-        } else if (v == eugeneCheungWebsite) {
-            openUrl(EUGENE_CHEUNG_WEBSITE);
-        } else if (v == adrianTwitter) {
-            openUrl(ADRIAN_TWITTER);
         }
     }
 
