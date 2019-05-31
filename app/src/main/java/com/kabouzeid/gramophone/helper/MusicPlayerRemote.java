@@ -20,7 +20,7 @@ import androidx.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.loader.SongLoader;
 import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.service.MusicService;

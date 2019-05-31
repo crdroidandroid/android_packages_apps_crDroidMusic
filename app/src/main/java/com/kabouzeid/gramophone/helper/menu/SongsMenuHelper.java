@@ -3,7 +3,7 @@ package com.kabouzeid.gramophone.helper.menu;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.dialogs.AddToPlaylistDialog;
 import com.kabouzeid.gramophone.dialogs.DeleteSongsDialog;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;

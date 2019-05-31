@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.interfaces.CabHolder;
 import com.kabouzeid.gramophone.model.Song;

@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.kabouzeid.gramophone.App;
+import com.crdroid.music.App;
 import com.kabouzeid.gramophone.model.Artist;
 
 import java.io.BufferedOutputStream;

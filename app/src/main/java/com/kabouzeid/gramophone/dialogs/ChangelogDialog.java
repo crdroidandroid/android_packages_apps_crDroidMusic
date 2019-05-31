@@ -20,7 +20,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.internal.ThemeSingleton;
 import com.kabouzeid.appthemehelper.util.ATHUtil;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 
 import java.io.BufferedReader;

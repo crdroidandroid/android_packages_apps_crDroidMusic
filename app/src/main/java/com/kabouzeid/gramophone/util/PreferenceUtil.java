@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.SortOrder;
 import com.kabouzeid.gramophone.model.CategoryInfo;
 import com.kabouzeid.gramophone.ui.fragments.mainactivity.folders.FoldersFragment;

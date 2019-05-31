@@ -17,7 +17,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.kabouzeid.appthemehelper.util.MaterialValueHelper;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.helper.MusicProgressViewUpdateHelper;
 import com.kabouzeid.gramophone.helper.PlayPauseButtonOnClickHandler;

@@ -18,7 +18,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.widget.RemoteViews;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.model.Song;
 import com.kabouzeid.gramophone.service.MusicService;
 import com.kabouzeid.gramophone.util.MusicUtil;

@@ -27,7 +27,7 @@ import com.bumptech.glide.Glide;
 import com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
 import com.kabouzeid.appthemehelper.util.MaterialValueHelper;
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.song.AlbumSongAdapter;
 import com.kabouzeid.gramophone.dialogs.AddToPlaylistDialog;
 import com.kabouzeid.gramophone.dialogs.DeleteSongsDialog;

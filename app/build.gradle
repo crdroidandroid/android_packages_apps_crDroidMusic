@@ -25,9 +25,9 @@ android {
         renderscriptTargetApi 29
         vectorDrawables.useSupportLibrary = true
 
-        applicationId 'com.kabouzeid.gramophone'
+        applicationId 'com.crdroid.music'
         versionCode 176
-        versionName '1.3.2'
+        versionName '10.0'
     }
     buildTypes {
         release {

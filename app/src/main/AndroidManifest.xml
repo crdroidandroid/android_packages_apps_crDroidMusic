@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.kabouzeid.gramophone">
+    package="com.crdroid.music">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,14 +15,14 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
-        android:name=".App"
+        android:name="com.crdroid.music.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Phonograph"
         tools:ignore="UnusedAttribute">
-        <activity android:name=".ui.activities.MainActivity">
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.MUSIC_PLAYER" />
@@ -93,38 +93,37 @@
                 <data android:mimeType="vnd.android.cursor.dir/audio" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.AlbumDetailActivity" />
-        <activity android:name=".ui.activities.ArtistDetailActivity" />
-        <activity android:name=".ui.activities.GenreDetailActivity" />
-        <activity android:name=".ui.activities.PlaylistDetailActivity" />
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.AlbumDetailActivity" />
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.ArtistDetailActivity" />
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.GenreDetailActivity" />
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.PlaylistDetailActivity" />
         <activity
-            android:name=".ui.activities.tageditor.SongTagEditorActivity"
+            android:name="com.kabouzeid.gramophone.ui.activities.tageditor.SongTagEditorActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.activities.tageditor.AlbumTagEditorActivity"
+            android:name="com.kabouzeid.gramophone.ui.activities.tageditor.AlbumTagEditorActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".ui.activities.SearchActivity" />
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.SearchActivity" />
         <activity
-            android:name=".ui.activities.SettingsActivity"
+            android:name="com.kabouzeid.gramophone.ui.activities.SettingsActivity"
             android:label="@string/action_settings" />
         <activity
-            android:name=".ui.activities.AboutActivity"
+            android:name="com.kabouzeid.gramophone.ui.activities.AboutActivity"
             android:label="@string/action_about" />
         <activity
-            android:name=".ui.activities.intro.AppIntroActivity"
+            android:name="com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity"
             android:label="@string/intro_label"
             android:theme="@style/Theme.Intro" />
         <activity
-            android:name=".appshortcuts.AppShortcutLauncherActivity"
+            android:name="com.kabouzeid.gramophone.appshortcuts.AppShortcutLauncherActivity"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".ui.activities.PurchaseActivity" />
 
         <service
-            android:name=".service.MusicService"
+            android:name="com.kabouzeid.gramophone.service.MusicService"
             android:enabled="true" />
 
-        <receiver android:name=".service.MediaButtonIntentReceiver">
+        <receiver android:name="com.kabouzeid.gramophone.service.MediaButtonIntentReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
@@ -144,14 +143,14 @@
             android:value="GlideModule" />
 
         <!-- Widgets -->
-        <receiver android:name=".appwidgets.BootReceiver">
+        <receiver android:name="com.kabouzeid.gramophone.appwidgets.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".appwidgets.AppWidgetBig"
+            android:name="com.kabouzeid.gramophone.appwidgets.AppWidgetBig"
             android:exported="false"
             android:label="@string/app_widget_big_name">
             <intent-filter>
@@ -163,7 +162,7 @@
                 android:resource="@xml/app_widget_big_info" />
         </receiver>
         <receiver
-            android:name=".appwidgets.AppWidgetClassic"
+            android:name="com.kabouzeid.gramophone.appwidgets.AppWidgetClassic"
             android:exported="false"
             android:label="@string/app_widget_classic_name">
             <intent-filter>
@@ -175,7 +174,7 @@
                 android:resource="@xml/app_widget_classic_info" />
         </receiver>
         <receiver
-            android:name=".appwidgets.AppWidgetSmall"
+            android:name="com.kabouzeid.gramophone.appwidgets.AppWidgetSmall"
             android:exported="false"
             android:label="@string/app_widget_small_name">
             <intent-filter>
@@ -187,7 +186,7 @@
                 android:resource="@xml/app_widget_small_info" />
         </receiver>
         <receiver
-            android:name=".appwidgets.AppWidgetCard"
+            android:name="com.kabouzeid.gramophone.appwidgets.AppWidgetCard"
             android:exported="false"
             android:label="@string/app_widget_card_name">
             <intent-filter>

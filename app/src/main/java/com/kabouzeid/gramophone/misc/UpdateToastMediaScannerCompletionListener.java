@@ -6,7 +6,7 @@ import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.widget.Toast;
 
-import com.kabouzeid.gramophone.R;
+import com.crdroid.music.R;
 
 import java.lang.ref.WeakReference;
 
