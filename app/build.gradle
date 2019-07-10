@@ -26,7 +26,7 @@ android {
         vectorDrawables.useSupportLibrary = true
 
         applicationId 'com.crdroid.music'
-        versionCode 172
+        versionCode 175
         versionName '9.0'
     }
     buildTypes {
@@ -57,7 +57,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core:1.0.1'
+    implementation 'androidx.core:core:1.0.2'
     implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
     implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
     implementation 'androidx.media:media:1.0.1'
