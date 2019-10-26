@@ -268,6 +268,8 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
             @Override
             public void onSeekTo(long pos) {
                 seek((int) pos);
+                updateMediaSessionMetaData();
+                updateMediaSessionPlaybackState();
             }
 
             @Override
@@ -561,7 +563,7 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
                 new PlaybackStateCompat.Builder()
                         .setActions(MEDIA_SESSION_ACTIONS)
                         .setState(isPlaying() ? PlaybackStateCompat.STATE_PLAYING : PlaybackStateCompat.STATE_PAUSED,
-                                getPosition(), 1)
+                                getSongProgressMillis(), 1)
                         .build());
     }
 
@@ -1059,6 +1061,7 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
         switch (what) {
             case PLAY_STATE_CHANGED:
                 updateNotification();
+                updateMediaSessionMetaData();
                 updateMediaSessionPlaybackState();
                 final boolean isPlaying = isPlaying();
                 if (!isPlaying && getSongProgressMillis() > 0) {
@@ -1069,6 +1072,7 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
             case META_CHANGED:
                 updateNotification();
                 updateMediaSessionMetaData();
+                updateMediaSessionPlaybackState();
                 savePosition();
                 savePositionInTrack();
                 final Song currentSong = getCurrentSong();
@@ -1080,6 +1084,7 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
                 break;
             case QUEUE_CHANGED:
                 updateMediaSessionMetaData(); // because playing queue size might have changed
+                updateMediaSessionPlaybackState();
                 saveState();
                 if (playingQueue.size() > 0) {
                     prepareNext();
