@@ -27,7 +27,7 @@ android {
 
         applicationId 'com.crdroid.music'
         versionCode 175
-        versionName '9.0'
+        versionName '10.0'
     }
     buildTypes {
         release {
