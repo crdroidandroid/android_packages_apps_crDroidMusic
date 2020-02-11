@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -33,7 +35,7 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
 
     private static String GITHUB = "https://github.com/kabouzeid/Phonograph";
 
-    private static String TWITTER = "https://twitter.com/karimjabouzeid";
+    private static String TWITTER = "https://twitter.com/swiftkarim";
     private static String WEBSITE = "https://kabouzeid.com/";
 
     @BindView(R.id.toolbar)
