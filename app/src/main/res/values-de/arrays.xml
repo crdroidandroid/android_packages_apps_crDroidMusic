@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_auto_download_images_values">
+        <item>Immer</item>
+        <item>only_wifi</item>
+        <item>Niemals</item>
+    </string-array>
+    <string-array name="pref_general_theme_list_values">
+        <item>Hell</item>
+        <item>Dunkel</item>
+        <item>Schwarz</item>
+    </string-array>
+</resources>
