@@ -658,31 +658,10 @@ public class MusicService extends Service implements SharedPreferences.OnSharedP
 
     public int getNextPosition(boolean force) {
         int position = getPosition() + 1;
-        switch (getRepeatMode()) {
-            case REPEAT_MODE_ALL:
-                if (isLastTrack()) {
-                    position = 0;
-                }
-                break;
-            case REPEAT_MODE_THIS:
-                if (force) {
-                    if (isLastTrack()) {
-                        position = 0;
-                    }
-                } else {
-                    position -= 1;
-                }
-                break;
-            default:
-            case REPEAT_MODE_NONE:
-                if (force) {
-                    if (isLastTrack()) {
-                        position = 0;
-                    }
-                } else {
-                    position -= 1;
-                }
-                break;
+        if ((getRepeatMode() == REPEAT_MODE_ALL || force) && isLastTrack()) {
+            position = 0;
+        } else {
+            position -= 1;
         }
         return position;
     }
