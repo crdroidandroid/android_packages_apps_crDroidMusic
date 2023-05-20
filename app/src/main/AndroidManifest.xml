@@ -22,7 +22,8 @@
         android:theme="@style/Theme.Phonograph.Light"
         android:requestLegacyExternalStorage="true"
         tools:ignore="UnusedAttribute">
-        <activity android:name="com.kabouzeid.gramophone.ui.activities.MainActivity">
+        <activity android:name="com.kabouzeid.gramophone.ui.activities.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.MUSIC_PLAYER" />
@@ -106,7 +107,8 @@
         <activity android:name="com.kabouzeid.gramophone.ui.activities.SearchActivity" />
         <activity
             android:name="com.kabouzeid.gramophone.ui.activities.SettingsActivity"
-            android:label="@string/action_settings" />
+            android:label="@string/action_settings"
+            android:exported="true" />
         <activity
             android:name="com.kabouzeid.gramophone.ui.activities.AboutActivity"
             android:label="@string/action_about" />
@@ -121,9 +123,11 @@
 
         <service
             android:name="com.kabouzeid.gramophone.service.MusicService"
-            android:enabled="true" />
+            android:enabled="true"
+            android:exported="true"/>
 
-        <receiver android:name="com.kabouzeid.gramophone.service.MediaButtonIntentReceiver">
+        <receiver android:name="com.kabouzeid.gramophone.service.MediaButtonIntentReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
@@ -143,7 +147,8 @@
             android:value="GlideModule" />
 
         <!-- Widgets -->
-        <receiver android:name="com.kabouzeid.gramophone.appwidgets.BootReceiver">
+        <receiver android:name="com.kabouzeid.gramophone.appwidgets.BootReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
