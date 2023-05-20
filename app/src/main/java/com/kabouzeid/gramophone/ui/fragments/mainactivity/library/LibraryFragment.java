@@ -87,7 +87,7 @@ public class LibraryFragment extends AbsMainActivityFragment implements CabHolde
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         PreferenceUtil.getInstance(getActivity()).registerOnSharedPreferenceChangedListener(this);
         getMainActivity().setStatusbarColorAuto();
         getMainActivity().setNavigationbarColorAuto();
@@ -181,7 +181,7 @@ public class LibraryFragment extends AbsMainActivityFragment implements CabHolde
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         if (pager == null) return;
         inflater.inflate(R.menu.menu_main, menu);

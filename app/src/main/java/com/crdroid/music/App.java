@@ -1,16 +1,9 @@
 package com.crdroid.music;
 
 import android.app.Application;
-import android.os.AsyncTask;
-import android.os.Build;
-
-import androidx.annotation.NonNull;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.appshortcuts.DynamicShortcutManager;
-
-import java.lang.ref.WeakReference;
-
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -33,9 +26,7 @@ public class App extends Application {
         }
 
         // Set up dynamic shortcuts
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
-            new DynamicShortcutManager(this).initDynamicShortcuts();
-        }
+        new DynamicShortcutManager(this).initDynamicShortcuts();
     }
 
     public static App getInstance() {

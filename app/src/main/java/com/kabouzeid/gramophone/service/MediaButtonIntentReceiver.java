@@ -17,7 +17,6 @@ import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
@@ -46,7 +45,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
     private static long mLastClickTime = 0;
 
     @SuppressLint("HandlerLeak") // false alarm, handler is already static
-    private static Handler mHandler = new Handler() {
+    private static final Handler mHandler = new Handler() {
 
         @Override
         public void handleMessage(final Message msg) {

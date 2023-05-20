@@ -140,6 +140,7 @@ public class FoldersFragment extends AbsMainActivityFragment implements MainActi
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState == null) {
+            assert getArguments() != null;
             setCrumb(new BreadCrumbLayout.Crumb(FileUtil.safeGetCanonicalFile((File) getArguments().getSerializable(PATH))), true);
         } else {
             breadCrumbs.restoreFromStateWrapper(savedInstanceState.getParcelable(CRUMBS));
@@ -246,14 +247,14 @@ public class FoldersFragment extends AbsMainActivityFragment implements MainActi
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu_folders, menu);
         ToolbarContentTintHelper.handleOnCreateOptionsMenu(getActivity(), toolbar, menu, ATHToolbarActivity.getToolbarBackgroundColor(toolbar));
     }
 
     @Override
-    public void onPrepareOptionsMenu(Menu menu) {
+    public void onPrepareOptionsMenu(@NonNull Menu menu) {
         super.onPrepareOptionsMenu(menu);
         ToolbarContentTintHelper.handleOnPrepareOptionsMenu(getActivity(), toolbar);
     }
@@ -588,7 +589,7 @@ public class FoldersFragment extends AbsMainActivityFragment implements MainActi
     }
 
     public static class ArrayListPathsAsyncTask extends ListingFilesDialogAsyncTask<ArrayListPathsAsyncTask.LoadingInfo, String, String[]> {
-        private WeakReference<OnPathsListedCallback> onPathsListedCallbackWeakReference;
+        private final WeakReference<OnPathsListedCallback> onPathsListedCallbackWeakReference;
 
         public ArrayListPathsAsyncTask(Context context, OnPathsListedCallback callback) {
             super(context, 500);

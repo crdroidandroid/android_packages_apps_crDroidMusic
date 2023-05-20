@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.Build;
 import android.provider.BaseColumns;
 import android.provider.MediaStore;
 import android.provider.Settings;
@@ -21,10 +20,7 @@ public class RingtoneManager {
 
 
     public static boolean requiresDialog(@NonNull Context context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            return !Settings.System.canWrite(context);
-        }
-        return false;
+        return !Settings.System.canWrite(context);
     }
 
     public static MaterialDialog showDialog(Context context) {
@@ -54,21 +50,16 @@ public class RingtoneManager {
         }
 
         try {
-            Cursor cursor = resolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+            try (Cursor cursor = resolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
                     new String[]{MediaStore.MediaColumns.TITLE},
                     BaseColumns._ID + "=?",
                     new String[]{String.valueOf(id)},
-                    null);
-            try {
+                    null)) {
                 if (cursor != null && cursor.getCount() == 1) {
                     cursor.moveToFirst();
                     Settings.System.putString(resolver, Settings.System.RINGTONE, uri.toString());
                     final String message = context.getString(R.string.x_has_been_set_as_ringtone, cursor.getString(0));
                     Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-                }
-            } finally {
-                if (cursor != null) {
-                    cursor.close();
                 }
             }
         } catch (SecurityException ignored) {

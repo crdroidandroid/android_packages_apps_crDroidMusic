@@ -87,7 +87,7 @@ public class SearchActivity extends AbsMusicServiceActivity implements SearchVie
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(QUERY, query);
     }
@@ -166,18 +166,19 @@ public class SearchActivity extends AbsMusicServiceActivity implements SearchVie
         }
     }
 
+    @NonNull
     @Override
     public Loader<List<Object>> onCreateLoader(int id, Bundle args) {
         return new AsyncSearchResultLoader(this, query);
     }
 
     @Override
-    public void onLoadFinished(Loader<List<Object>> loader, List<Object> data) {
+    public void onLoadFinished(@NonNull Loader<List<Object>> loader, List<Object> data) {
         adapter.swapDataSet(data);
     }
 
     @Override
-    public void onLoaderReset(Loader<List<Object>> loader) {
+    public void onLoaderReset(@NonNull Loader<List<Object>> loader) {
         adapter.swapDataSet(Collections.emptyList());
     }
 

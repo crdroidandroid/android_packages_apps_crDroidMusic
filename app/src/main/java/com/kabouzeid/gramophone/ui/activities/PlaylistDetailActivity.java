@@ -243,13 +243,13 @@ public class PlaylistDetailActivity extends AbsSlidingMusicPanelActivity impleme
     }
 
     @Override
-    public void onLoadFinished(Loader<List<Song>> loader, List<Song> data) {
+    public void onLoadFinished(@NonNull Loader<List<Song>> loader, List<Song> data) {
         if (adapter != null)
             adapter.swapDataSet(data);
     }
 
     @Override
-    public void onLoaderReset(Loader<List<Song>> loader) {
+    public void onLoaderReset(@NonNull Loader<List<Song>> loader) {
         if (adapter != null)
             adapter.swapDataSet(new ArrayList<>());
     }

@@ -3,6 +3,8 @@ package com.kabouzeid.gramophone.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.annotation.NonNull;
+
 /**
  * @author Karim Abou Zeid (kabouzeid)
  */
@@ -73,6 +75,7 @@ public class Song implements Parcelable {
         return result;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Song{" +

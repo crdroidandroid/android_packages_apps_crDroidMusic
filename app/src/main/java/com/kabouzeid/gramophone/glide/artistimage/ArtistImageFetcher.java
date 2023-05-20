@@ -19,7 +19,6 @@ import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.data.DataFetcher;
 import com.kabouzeid.gramophone.glide.audiocover.AudioFileCoverUtils;
 import com.kabouzeid.gramophone.util.ImageUtil;
-import com.kabouzeid.gramophone.util.PreferenceUtil;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -30,7 +29,7 @@ public class ArtistImageFetcher implements DataFetcher<InputStream> {
 
     private InputStream stream;
 
-    private boolean ignoreMediaStore;
+    private final boolean ignoreMediaStore;
 
     public ArtistImageFetcher(final ArtistImage model, boolean ignoreMediaStore) {
         this.model = model;

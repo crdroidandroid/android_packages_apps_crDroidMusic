@@ -27,10 +27,9 @@ public class ClearSmartPlaylistDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        //noinspection unchecked
+        assert getArguments() != null;
         final AbsSmartPlaylist playlist = getArguments().getParcelable("playlist");
         int title = R.string.clear_playlist_title;
-        //noinspection ConstantConditions
         CharSequence content = Html.fromHtml(getString(R.string.clear_playlist_x, playlist.name));
 
         return new MaterialDialog.Builder(getActivity())

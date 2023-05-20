@@ -312,6 +312,7 @@ public class MusicUtil {
 
     public static boolean isArtistNameUnknown(@Nullable String artistName) {
         if (TextUtils.isEmpty(artistName)) return false;
+        assert artistName != null;
         if (artistName.equals(Artist.UNKNOWN_ARTIST_DISPLAY_NAME)) return true;
         artistName = artistName.trim().toLowerCase();
         return artistName.equals("unknown") || artistName.equals("<unknown>");
@@ -320,6 +321,7 @@ public class MusicUtil {
     @NonNull
     public static String getSectionName(@Nullable String musicMediaTitle) {
         if (TextUtils.isEmpty(musicMediaTitle)) return "";
+        assert musicMediaTitle != null;
         musicMediaTitle = musicMediaTitle.trim().toLowerCase();
         if (musicMediaTitle.startsWith("the ")) {
             musicMediaTitle = musicMediaTitle.substring(4);

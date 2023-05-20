@@ -10,10 +10,6 @@ import android.graphics.BitmapFactory;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,12 +17,17 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.crdroid.music.R;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
 import com.kabouzeid.appthemehelper.util.TintHelper;
-import com.crdroid.music.R;
 import com.kabouzeid.gramophone.misc.DialogAsyncTask;
 import com.kabouzeid.gramophone.misc.SimpleObservableScrollViewCallbacks;
 import com.kabouzeid.gramophone.misc.UpdateToastMediaScannerCompletionListener;
@@ -47,8 +48,8 @@ import org.jaudiotagger.tag.images.Artwork;
 import org.jaudiotagger.tag.images.ArtworkFactory;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -286,7 +287,7 @@ public abstract class AbsTagEditorActivity extends AbsBaseActivity {
                 if (info.artworkInfo != null && info.artworkInfo.artwork != null) {
                     try {
                         albumArtFile = MusicUtil.createAlbumArtFile().getCanonicalFile();
-                        info.artworkInfo.artwork.compress(Bitmap.CompressFormat.PNG, 0, new FileOutputStream(albumArtFile));
+                        info.artworkInfo.artwork.compress(Bitmap.CompressFormat.PNG, 0, Files.newOutputStream(albumArtFile.toPath()));
                         artwork = ArtworkFactory.createArtworkFromFile(albumArtFile);
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -332,8 +333,10 @@ public abstract class AbsTagEditorActivity extends AbsBaseActivity {
                 Context context = getContext();
                 if (context != null) {
                     if (wroteArtwork) {
+                        assert info.artworkInfo != null;
                         MusicUtil.insertAlbumArt(context, info.artworkInfo.albumId, albumArtFile.getPath());
                     } else if (deletedArtwork) {
+                        assert info.artworkInfo != null;
                         MusicUtil.deleteAlbumArt(context, info.artworkInfo.albumId);
                     }
                 }
@@ -383,7 +386,7 @@ public abstract class AbsTagEditorActivity extends AbsBaseActivity {
             @Nullable
             public final Map<FieldKey, String> fieldKeyValueMap;
             @Nullable
-            private ArtworkInfo artworkInfo;
+            private final ArtworkInfo artworkInfo;
 
             private LoadingInfo(Collection<String> filePaths, @Nullable Map<FieldKey, String> fieldKeyValueMap, @Nullable ArtworkInfo artworkInfo) {
                 this.filePaths = filePaths;

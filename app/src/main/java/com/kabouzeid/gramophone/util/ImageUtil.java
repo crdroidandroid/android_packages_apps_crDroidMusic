@@ -7,13 +7,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import androidx.annotation.AttrRes;
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
 import java.io.InputStream;
 
@@ -88,10 +86,7 @@ public class ImageUtil {
     }
 
     public static Drawable getVectorDrawable(@NonNull Resources res, @DrawableRes int resId, @Nullable Resources.Theme theme) {
-        if (Build.VERSION.SDK_INT >= 21) {
-            return res.getDrawable(resId, theme);
-        }
-        return VectorDrawableCompat.create(res, resId, theme);
+        return res.getDrawable(resId, theme);
     }
 
     public static Drawable getTintedVectorDrawable(@NonNull Resources res, @DrawableRes int resId, @Nullable Resources.Theme theme, @ColorInt int color) {

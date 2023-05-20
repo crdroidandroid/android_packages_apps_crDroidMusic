@@ -60,6 +60,7 @@ public class SongDetailDialog extends DialogFragment {
         final Activity context = getActivity();
         final Song song = getArguments().getParcelable("song");
 
+        assert context != null;
         MaterialDialog dialog = new MaterialDialog.Builder(context)
                 .customView(R.layout.dialog_file_details, true)
                 .title(context.getResources().getString(R.string.label_details))
@@ -67,6 +68,7 @@ public class SongDetailDialog extends DialogFragment {
                 .build();
 
         View dialogView = dialog.getCustomView();
+        assert dialogView != null;
         final TextView fileName = dialogView.findViewById(R.id.file_name);
         final TextView filePath = dialogView.findViewById(R.id.file_path);
         final TextView fileSize = dialogView.findViewById(R.id.file_size);
@@ -94,7 +96,7 @@ public class SongDetailDialog extends DialogFragment {
                     AudioHeader audioHeader = audioFile.getAudioHeader();
 
                     fileFormat.setText(makeTextWithTitle(context, R.string.label_file_format, audioHeader.getFormat()));
-                    trackLength.setText(makeTextWithTitle(context, R.string.label_track_length, MusicUtil.getReadableDurationString(audioHeader.getTrackLength() * 1000)));
+                    trackLength.setText(makeTextWithTitle(context, R.string.label_track_length, MusicUtil.getReadableDurationString(audioHeader.getTrackLength() * 1000L)));
                     bitRate.setText(makeTextWithTitle(context, R.string.label_bit_rate, audioHeader.getBitRate() + " kb/s"));
                     samplingRate.setText(makeTextWithTitle(context, R.string.label_sampling_rate, audioHeader.getSampleRate() + " Hz"));
                 } catch (@NonNull CannotReadException | IOException | TagException | ReadOnlyFileException | InvalidAudioFrameException e) {

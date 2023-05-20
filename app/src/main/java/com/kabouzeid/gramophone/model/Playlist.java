@@ -2,6 +2,7 @@ package com.kabouzeid.gramophone.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import androidx.annotation.NonNull;
 
 /**
@@ -40,6 +41,7 @@ public class Playlist implements Parcelable {
         return result;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Playlist{" +

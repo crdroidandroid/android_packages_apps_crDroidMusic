@@ -449,18 +449,20 @@ public class ArtistDetailActivity extends AbsSlidingMusicPanelActivity implement
         return artist;
     }
 
+    @NonNull
     @Override
     public Loader<Artist> onCreateLoader(int id, Bundle args) {
+        assert args != null;
         return new AsyncArtistDataLoader(this, args.getLong(EXTRA_ARTIST_ID));
     }
 
     @Override
-    public void onLoadFinished(Loader<Artist> loader, Artist data) {
+    public void onLoadFinished(@NonNull Loader<Artist> loader, Artist data) {
         setArtist(data);
     }
 
     @Override
-    public void onLoaderReset(Loader<Artist> loader) {
+    public void onLoaderReset(@NonNull Loader<Artist> loader) {
         this.artist = new Artist();
         songAdapter.swapDataSet(artist.getSongs());
         albumAdapter.swapDataSet(artist.albums);

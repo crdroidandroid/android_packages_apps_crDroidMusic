@@ -27,6 +27,7 @@ public class SongShareDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        assert getArguments() != null;
         final Song song = getArguments().getParcelable("song");
         final String currentlyListening = getString(R.string.currently_listening_to_x_by_x, song.title, song.artistName);
         return new MaterialDialog.Builder(getActivity())

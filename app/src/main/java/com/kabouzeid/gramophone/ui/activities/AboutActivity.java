@@ -5,20 +5,17 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
+
 import com.afollestad.materialdialogs.internal.ThemeSingleton;
-import com.kabouzeid.appthemehelper.ThemeStore;
-import com.crdroid.music.App;
 import com.crdroid.music.R;
+import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 import com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity;
@@ -33,10 +30,10 @@ import de.psdev.licensesdialog.LicensesDialog;
 @SuppressWarnings("FieldCanBeLocal")
 public class AboutActivity extends AbsBaseActivity implements View.OnClickListener {
 
-    private static String GITHUB = "https://github.com/kabouzeid/Phonograph";
+    private static final String GITHUB = "https://github.com/kabouzeid/Phonograph";
 
-    private static String TWITTER = "https://twitter.com/swiftkarim";
-    private static String WEBSITE = "https://kabouzeid.com/";
+    private static final String TWITTER = "https://twitter.com/swiftkarim";
+    private static final String WEBSITE = "https://kabouzeid.com/";
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;

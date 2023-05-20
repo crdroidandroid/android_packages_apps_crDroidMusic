@@ -2,6 +2,8 @@ package com.kabouzeid.gramophone.ui.fragments.player;
 
 import android.content.Context;
 import android.content.Intent;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
@@ -28,7 +30,7 @@ public abstract class AbsPlayerFragment extends AbsMusicServiceFragment implemen
     private static boolean isToolbarShown = true;
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
             callbacks = (Callbacks) context;

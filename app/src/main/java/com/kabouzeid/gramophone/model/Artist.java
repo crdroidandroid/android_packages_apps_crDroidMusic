@@ -78,6 +78,7 @@ public class Artist implements Parcelable {
         return albums != null ? albums.hashCode() : 0;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Artist{" +

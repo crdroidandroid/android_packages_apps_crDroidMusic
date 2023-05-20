@@ -4,13 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.loader.app.LoaderManager;
-import androidx.loader.content.Loader;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.Menu;
@@ -20,14 +13,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.afollestad.materialcab.MaterialCab;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.util.DialogUtils;
 import com.bumptech.glide.Glide;
+import com.crdroid.music.R;
 import com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView;
 import com.kabouzeid.appthemehelper.util.ColorUtil;
 import com.kabouzeid.appthemehelper.util.MaterialValueHelper;
-import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.song.AlbumSongAdapter;
 import com.kabouzeid.gramophone.dialogs.AddToPlaylistDialog;
 import com.kabouzeid.gramophone.dialogs.DeleteSongsDialog;
@@ -53,7 +54,6 @@ import com.kabouzeid.gramophone.util.NavigationUtil;
 import com.kabouzeid.gramophone.util.PhonographColorUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -428,18 +428,20 @@ public class AlbumDetailActivity extends AbsSlidingMusicPanelActivity implements
         return album;
     }
 
+    @NonNull
     @Override
     public Loader<Album> onCreateLoader(int id, Bundle args) {
+        assert args != null;
         return new AsyncAlbumLoader(this, args.getLong(EXTRA_ALBUM_ID));
     }
 
     @Override
-    public void onLoadFinished(Loader<Album> loader, Album data) {
+    public void onLoadFinished(@NonNull Loader<Album> loader, Album data) {
         setAlbum(data);
     }
 
     @Override
-    public void onLoaderReset(Loader<Album> loader) {
+    public void onLoaderReset(@NonNull Loader<Album> loader) {
         this.album = new Album();
         adapter.swapDataSet(album.songs);
     }

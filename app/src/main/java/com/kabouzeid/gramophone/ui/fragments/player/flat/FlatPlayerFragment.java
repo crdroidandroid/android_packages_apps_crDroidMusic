@@ -216,7 +216,6 @@ public class FlatPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
         }
     }
 
-    @SuppressWarnings("ConstantConditions")
     private void updateCurrentSong() {
         impl.updateCurrentSong(MusicPlayerRemote.getCurrentSong());
     }
@@ -225,6 +224,7 @@ public class FlatPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
         playbackControlsFragment = (FlatPlayerPlaybackControlsFragment) getChildFragmentManager().findFragmentById(R.id.playback_controls_fragment);
         playerAlbumCoverFragment = (PlayerAlbumCoverFragment) getChildFragmentManager().findFragmentById(R.id.player_album_cover_fragment);
 
+        assert playerAlbumCoverFragment != null;
         playerAlbumCoverFragment.setCallbacks(this);
     }
 
@@ -239,8 +239,10 @@ public class FlatPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_show_lyrics:
-                if (lyrics != null)
+                if (lyrics != null) {
+                    assert getFragmentManager() != null;
                     LyricsDialog.create(lyrics).show(getFragmentManager(), "LYRICS");
+                }
                 return true;
         }
         return super.onMenuItemClick(item);

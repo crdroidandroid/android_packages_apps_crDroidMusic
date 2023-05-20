@@ -221,7 +221,6 @@ public class CardPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
         }
     }
 
-    @SuppressWarnings("ConstantConditions")
     private void updateCurrentSong() {
         impl.updateCurrentSong(MusicPlayerRemote.getCurrentSong());
     }
@@ -230,6 +229,7 @@ public class CardPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
         playbackControlsFragment = (CardPlayerPlaybackControlsFragment) getChildFragmentManager().findFragmentById(R.id.playback_controls_fragment);
         playerAlbumCoverFragment = (PlayerAlbumCoverFragment) getChildFragmentManager().findFragmentById(R.id.player_album_cover_fragment);
 
+        assert playerAlbumCoverFragment != null;
         playerAlbumCoverFragment.setCallbacks(this);
     }
 
@@ -474,17 +474,13 @@ public class CardPlayerFragment extends AbsPlayerFragment implements PlayerAlbum
 
         public AnimatorSet createDefaultColorChangeAnimatorSet(int newColor) {
             Animator backgroundAnimator;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                //noinspection ConstantConditions
-                int x = (int) (fragment.playbackControlsFragment.playPauseFab.getX() + fragment.playbackControlsFragment.playPauseFab.getWidth() / 2 + fragment.playbackControlsFragment.getView().getX());
-                int y = (int) (fragment.playbackControlsFragment.playPauseFab.getY() + fragment.playbackControlsFragment.playPauseFab.getHeight() / 2 + fragment.playbackControlsFragment.getView().getY() + fragment.playbackControlsFragment.progressSlider.getHeight());
-                float startRadius = Math.max(fragment.playbackControlsFragment.playPauseFab.getWidth() / 2, fragment.playbackControlsFragment.playPauseFab.getHeight() / 2);
-                float endRadius = Math.max(fragment.colorBackground.getWidth(), fragment.colorBackground.getHeight());
-                fragment.colorBackground.setBackgroundColor(newColor);
-                backgroundAnimator = ViewAnimationUtils.createCircularReveal(fragment.colorBackground, x, y, startRadius, endRadius);
-            } else {
-                backgroundAnimator = ViewUtil.createBackgroundColorTransition(fragment.colorBackground, fragment.lastColor, newColor);
-            }
+            //noinspection ConstantConditions
+            int x = (int) (fragment.playbackControlsFragment.playPauseFab.getX() + fragment.playbackControlsFragment.playPauseFab.getWidth() / 2 + fragment.playbackControlsFragment.getView().getX());
+            int y = (int) (fragment.playbackControlsFragment.playPauseFab.getY() + fragment.playbackControlsFragment.playPauseFab.getHeight() / 2 + fragment.playbackControlsFragment.getView().getY() + fragment.playbackControlsFragment.progressSlider.getHeight());
+            float startRadius = Math.max(fragment.playbackControlsFragment.playPauseFab.getWidth() / 2, fragment.playbackControlsFragment.playPauseFab.getHeight() / 2);
+            float endRadius = Math.max(fragment.colorBackground.getWidth(), fragment.colorBackground.getHeight());
+            fragment.colorBackground.setBackgroundColor(newColor);
+            backgroundAnimator = ViewAnimationUtils.createCircularReveal(fragment.colorBackground, x, y, startRadius, endRadius);
 
             AnimatorSet animatorSet = new AnimatorSet();
 

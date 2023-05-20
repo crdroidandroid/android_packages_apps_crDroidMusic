@@ -38,7 +38,7 @@ public class DeleteSongsDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        //noinspection unchecked
+        assert getArguments() != null;
         final List<Song> songs = getArguments().getParcelableArrayList("songs");
         int title;
         CharSequence content;

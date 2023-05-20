@@ -1,5 +1,6 @@
 package com.kabouzeid.gramophone.model.lyrics;
 
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -44,13 +45,14 @@ class SynchronizedLyricsLRC extends AbsSynchronizedLyrics {
                     String time = matcher.group(1);
                     String text = matcher.group(2);
 
+                    assert time != null;
                     Matcher timeMatcher = SynchronizedLyricsLRC.LRC_TIME_PATTERN.matcher(time);
                     while (timeMatcher.find()) {
                         int m = 0;
                         float s = 0f;
                         try {
-                            m = Integer.parseInt(timeMatcher.group(1));
-                            s = Float.parseFloat(timeMatcher.group(2));
+                            m = Integer.parseInt(Objects.requireNonNull(timeMatcher.group(1)));
+                            s = Float.parseFloat(Objects.requireNonNull(timeMatcher.group(2)));
                         } catch (NumberFormatException ex) {
                             ex.printStackTrace();
                         }

@@ -3,7 +3,6 @@ package com.kabouzeid.gramophone.dialogs;
 import android.Manifest;
 import android.app.Dialog;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import androidx.annotation.NonNull;
@@ -16,7 +15,6 @@ import com.crdroid.music.R;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -59,7 +57,7 @@ public class BlacklistFolderChooserDialog extends DialogFragment implements Mate
                     results.add(fi);
                 }
             }
-            Collections.sort(results, new FolderSorter());
+            results.sort(new FolderSorter());
             return results.toArray(new File[results.size()]);
         }
         return null;
@@ -72,8 +70,7 @@ public class BlacklistFolderChooserDialog extends DialogFragment implements Mate
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
-                && ActivityCompat.checkSelfPermission(
+        if (ActivityCompat.checkSelfPermission(
                 getActivity(), Manifest.permission.READ_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             return new MaterialDialog.Builder(getActivity())
@@ -94,7 +91,7 @@ public class BlacklistFolderChooserDialog extends DialogFragment implements Mate
         MaterialDialog.Builder builder =
                 new MaterialDialog.Builder(getActivity())
                         .title(parentFolder.getAbsolutePath())
-                        .items((CharSequence[]) getContentsArray())
+                        .items(getContentsArray())
                         .itemsCallback(this)
                         .autoDismiss(false)
                         .onPositive((dialog, which) -> {
@@ -111,6 +108,7 @@ public class BlacklistFolderChooserDialog extends DialogFragment implements Mate
     public void onSelection(MaterialDialog materialDialog, View view, int i, CharSequence s) {
         if (canGoUp && i == 0) {
             parentFolder = parentFolder.getParentFile();
+            assert parentFolder != null;
             if (parentFolder.getAbsolutePath().equals("/storage/emulated")) {
                 parentFolder = parentFolder.getParentFile();
             }
@@ -132,12 +130,13 @@ public class BlacklistFolderChooserDialog extends DialogFragment implements Mate
     private void reload() {
         parentContents = listFiles();
         MaterialDialog dialog = (MaterialDialog) getDialog();
+        assert dialog != null;
         dialog.setTitle(parentFolder.getAbsolutePath());
-        dialog.setItems((CharSequence[]) getContentsArray());
+        dialog.setItems(getContentsArray());
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
+    public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("current_path", parentFolder.getAbsolutePath());
     }

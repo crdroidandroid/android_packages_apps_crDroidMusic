@@ -64,7 +64,7 @@ public class NowPlayingScreenPreferenceDialog extends DialogFragment implements 
     }
 
     @Override
-    public void onDismiss(DialogInterface dialog) {
+    public void onDismiss(@NonNull DialogInterface dialog) {
         super.onDismiss(dialog);
         if (whichButtonClicked == DialogAction.POSITIVE) {
             PreferenceUtil.getInstance(getContext()).setNowPlayingScreen(NowPlayingScreen.values()[viewPagerPosition]);
@@ -88,7 +88,7 @@ public class NowPlayingScreenPreferenceDialog extends DialogFragment implements 
 
     private static class NowPlayingScreenAdapter extends PagerAdapter {
 
-        private Context context;
+        private final Context context;
 
         public NowPlayingScreenAdapter(Context context) {
             this.context = context;

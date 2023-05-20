@@ -5,18 +5,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.core.app.ActivityCompat;
 import android.view.KeyEvent;
 import android.view.View;
 
-import com.kabouzeid.appthemehelper.ThemeStore;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+
 import com.crdroid.music.R;
+import com.google.android.material.snackbar.Snackbar;
+import com.kabouzeid.appthemehelper.ThemeStore;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -53,9 +53,7 @@ public abstract class AbsBaseActivity extends AbsThemeActivity {
         final boolean hasPermissions = hasPermissions();
         if (hasPermissions != hadPermissions) {
             hadPermissions = hasPermissions;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                onHasPermissionsChanged(hasPermissions);
-            }
+            onHasPermissionsChanged(hasPermissions);
         }
     }
 
@@ -94,13 +92,13 @@ public abstract class AbsBaseActivity extends AbsThemeActivity {
     }
 
     protected void requestPermissions() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && permissions != null) {
+        if (permissions != null) {
             requestPermissions(permissions, PERMISSION_REQUEST);
         }
     }
 
     protected boolean hasPermissions() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && permissions != null) {
+        if (permissions != null) {
             for (String permission : permissions) {
                 if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
                     return false;

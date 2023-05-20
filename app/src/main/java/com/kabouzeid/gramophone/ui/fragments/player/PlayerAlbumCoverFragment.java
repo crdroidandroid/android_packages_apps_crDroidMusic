@@ -69,7 +69,7 @@ public class PlayerAlbumCoverFragment extends AbsMusicServiceFragment implements
         super.onViewCreated(view, savedInstanceState);
         viewPager.addOnPageChangeListener(this);
         viewPager.setOnTouchListener(new View.OnTouchListener() {
-            GestureDetector gestureDetector = new GestureDetector(getActivity(), new GestureDetector.SimpleOnGestureListener() {
+            final GestureDetector gestureDetector = new GestureDetector(getActivity(), new GestureDetector.SimpleOnGestureListener() {
                 @Override
                 public boolean onSingleTapConfirmed(MotionEvent e) {
                     if (callbacks != null) {

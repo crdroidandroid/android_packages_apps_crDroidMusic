@@ -29,6 +29,7 @@ public class RenamePlaylistDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        assert getArguments() != null;
         long playlistId = getArguments().getLong(PLAYLIST_ID);
         return new MaterialDialog.Builder(getActivity())
                 .title(R.string.rename_playlist_title)

@@ -1,13 +1,11 @@
 package com.kabouzeid.gramophone.util;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Point;
-import android.os.Build;
 import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,7 +40,6 @@ public class Util {
         return size;
     }
 
-    @TargetApi(Build.VERSION_CODES.KITKAT)
     public static void setStatusBarTranslucent(@NonNull Window window) {
         window.setFlags(
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
@@ -80,12 +77,9 @@ public class Util {
         return dimensionPixelSize;
     }
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public static boolean isRTL(@NonNull Context context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            Configuration config = context.getResources().getConfiguration();
-            return config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
-        } else return false;
+        Configuration config = context.getResources().getConfiguration();
+        return config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
     }
 
 }

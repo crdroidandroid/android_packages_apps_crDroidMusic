@@ -70,6 +70,7 @@ public class Album implements Parcelable {
         return songs != null ? songs.hashCode() : 0;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Album{" +

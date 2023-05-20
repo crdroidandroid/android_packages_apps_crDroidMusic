@@ -19,7 +19,6 @@ import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.internal.ThemeSingleton;
-import com.crdroid.music.App;
 import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.service.MusicService;
@@ -46,7 +45,7 @@ public class SleepTimerDialog extends DialogFragment {
     private TimerUpdater timerUpdater;
 
     @Override
-    public void onDismiss(DialogInterface dialog) {
+    public void onDismiss(@NonNull DialogInterface dialog) {
         super.onDismiss(dialog);
         timerUpdater.cancel();
     }
@@ -69,7 +68,7 @@ public class SleepTimerDialog extends DialogFragment {
 
                     PendingIntent pi = makeTimerPendingIntent(PendingIntent.FLAG_CANCEL_CURRENT);
 
-                    final long nextSleepTimerElapsedTime = SystemClock.elapsedRealtime() + minutes * 60 * 1000;
+                    final long nextSleepTimerElapsedTime = SystemClock.elapsedRealtime() + (long) minutes * 60 * 1000;
                     PreferenceUtil.getInstance(getActivity()).setNextSleepTimerElapsedRealtime(nextSleepTimerElapsedTime);
                     AlarmManager am = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
                     am.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, nextSleepTimerElapsedTime, pi);

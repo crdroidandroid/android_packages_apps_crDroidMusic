@@ -25,7 +25,7 @@ public class MultiPlayer implements Playback, MediaPlayer.OnErrorListener, Media
     private MediaPlayer mCurrentMediaPlayer = new MediaPlayer();
     private MediaPlayer mNextMediaPlayer;
 
-    private Context context;
+    private final Context context;
     @Nullable
     private Playback.PlaybackCallbacks callbacks;
 

@@ -1,8 +1,6 @@
 package com.kabouzeid.gramophone.views;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
@@ -25,14 +23,12 @@ public class WidthFitSquareLayout extends FrameLayout {
         super(context, attrs, defStyleAttr);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public WidthFitSquareLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        //noinspection SuspiciousNameCombination
         super.onMeasure(widthMeasureSpec, forceSquare ? widthMeasureSpec : heightMeasureSpec);
     }
 

@@ -49,7 +49,7 @@ public class AddToPlaylistDialog extends DialogFragment {
                 .title(R.string.add_playlist_title)
                 .items(playlistNames)
                 .itemsCallback((materialDialog, view, i, charSequence) -> {
-                    //noinspection unchecked
+                    assert getArguments() != null;
                     final List<Song> songs = getArguments().getParcelableArrayList("songs");
                     if (songs == null) return;
                     if (i == 0) {
