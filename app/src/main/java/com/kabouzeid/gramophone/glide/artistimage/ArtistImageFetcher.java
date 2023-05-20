@@ -143,8 +143,8 @@ public class ArtistImageFetcher implements DataFetcher<InputStream> {
 
             }
         } finally {
-            retriever.release();
             try {
+                retriever.release();
                 for (final InputStream stream : streams) {
                     stream.close();
                 }
