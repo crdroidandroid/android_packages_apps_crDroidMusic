@@ -4,8 +4,6 @@
 
     <style name="Theme.Phonograph.Light" parent="Theme.Phonograph.Base.Light" />
 
-    <style name="Theme.Phonograph.Black" parent="Theme.Phonograph.Base.Black" />
-
     <style name="Theme.Phonograph.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent" />
 
     <style name="Theme.Phonograph.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />

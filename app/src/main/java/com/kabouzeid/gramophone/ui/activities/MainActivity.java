@@ -42,6 +42,7 @@ import com.kabouzeid.gramophone.ui.fragments.mainactivity.folders.FoldersFragmen
 import com.kabouzeid.gramophone.ui.fragments.mainactivity.library.LibraryFragment;
 import com.kabouzeid.gramophone.util.MusicUtil;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
+import com.kabouzeid.gramophone.util.Util;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.util.ArrayList;
@@ -131,6 +132,11 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
 
     @Override
     protected View createContentView() {
+        if (Util.isDarkModeEnabled(this)) {
+            setTheme(R.style.Theme_Phonograph);
+        } else {
+            setTheme(R.style.Theme_Phonograph_Light);
+        }
         @SuppressLint("InflateParams")
         View contentView = getLayoutInflater().inflate(R.layout.activity_main_drawer_layout, null);
         ViewGroup drawerContent = contentView.findViewById(R.id.drawer_content_container);

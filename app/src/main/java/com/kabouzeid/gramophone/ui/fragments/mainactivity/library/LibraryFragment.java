@@ -133,7 +133,8 @@ public class LibraryFragment extends AbsMainActivityFragment implements CabHolde
         int selectedColor = ToolbarContentTintHelper.toolbarTitleColor(getActivity(), primaryColor);
         TabLayoutUtil.setTabIconColors(tabs, normalColor, selectedColor);
         tabs.setTabTextColors(normalColor, selectedColor);
-        tabs.setSelectedTabIndicatorColor(ThemeStore.accentColor(getActivity()));
+        tabs.setSelectedTabIndicatorColor(getResources().getColor(R.color.material_dynamic_tertiary100));
+        tabs.setBackgroundColor(ThemeStore.accentColor(getActivity()));
 
         updateTabVisibility();
 

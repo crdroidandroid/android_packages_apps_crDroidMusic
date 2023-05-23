@@ -142,8 +142,6 @@ public final class PreferenceUtil {
         switch (themePrefValue) {
             case "dark":
                 return R.style.Theme_Phonograph;
-            case "black":
-                return R.style.Theme_Phonograph_Black;
             case "light":
             default:
                 return R.style.Theme_Phonograph_Light;

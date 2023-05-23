@@ -1,6 +1,8 @@
 package com.crdroid.music;
 
 import android.app.Application;
+import android.graphics.Color;
+import com.google.android.material.color.DynamicColors;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.appshortcuts.DynamicShortcutManager;
@@ -17,13 +19,14 @@ public class App extends Application {
         super.onCreate();
         app = this;
 
+        DynamicColors.applyToActivitiesIfAvailable(this);
+
         // default theme
-        if (!ThemeStore.isConfigured(this, 1)) {
-            ThemeStore.editTheme(this)
-                    .primaryColorRes(R.color.md_indigo_500)
-                    .accentColorRes(R.color.md_pink_A400)
-                    .commit();
-        }
+        ThemeStore.editTheme(this)
+                .primaryColorRes(R.color.material_dynamic_primary50)
+                .accentColorRes(R.color.material_dynamic_primary50)
+                .navigationBarColor(Color.TRANSPARENT)
+                .commit();
 
         // Set up dynamic shortcuts
         new DynamicShortcutManager(this).initDynamicShortcuts();

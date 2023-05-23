@@ -82,4 +82,8 @@ public class Util {
         return config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
     }
 
+    public static boolean isDarkModeEnabled(@NonNull Context context) {
+        int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
+    }
 }

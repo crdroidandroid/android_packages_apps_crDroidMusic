@@ -19,6 +19,7 @@ import com.kabouzeid.appthemehelper.ThemeStore;
 import com.kabouzeid.gramophone.dialogs.ChangelogDialog;
 import com.kabouzeid.gramophone.ui.activities.base.AbsBaseActivity;
 import com.kabouzeid.gramophone.ui.activities.intro.AppIntroActivity;
+import com.kabouzeid.gramophone.util.Util;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,6 +58,11 @@ public class AboutActivity extends AbsBaseActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Util.isDarkModeEnabled(this)) {
+            setTheme(R.style.Theme_Phonograph);
+        } else {
+            setTheme(R.style.Theme_Phonograph_Light);
+        }
         setContentView(R.layout.activity_about);
         setDrawUnderStatusbar();
         ButterKnife.bind(this);

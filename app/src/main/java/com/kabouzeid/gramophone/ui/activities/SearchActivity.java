@@ -53,6 +53,11 @@ public class SearchActivity extends AbsMusicServiceActivity implements SearchVie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Util.isDarkModeEnabled(this)) {
+            setTheme(R.style.Theme_Phonograph);
+        } else {
+            setTheme(R.style.Theme_Phonograph_Light);
+        }
         setContentView(R.layout.activity_search);
         setDrawUnderStatusbar();
         ButterKnife.bind(this);
