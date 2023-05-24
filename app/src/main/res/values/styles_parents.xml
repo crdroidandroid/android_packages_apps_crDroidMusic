@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Theme.Phonograph.Base" parent="Theme.Material3.DayNight.NoActionBar">
-
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
 
@@ -31,7 +31,7 @@
     </style>
 
     <style name="Theme.Phonograph.Base.Light" parent="Theme.Material3.DayNight.NoActionBar">
-
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
 
@@ -61,11 +61,13 @@
 
     <style name="FabParent">
         <item name="borderWidth">0dp</item>
+        <item name="android:transitionName">@string/transition_fab</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="MusicProgressSliderParent">
+        <item name="android:padding">0dp</item>
         <item name="android:progressDrawable">@android:color/transparent</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
