@@ -2,7 +2,6 @@ package com.kabouzeid.gramophone.ui.fragments.player;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.graphics.PorterDuff;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,12 +14,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kabouzeid.appthemehelper.ThemeStore;
-import com.kabouzeid.appthemehelper.util.ATHUtil;
 import com.crdroid.music.R;
 import com.kabouzeid.gramophone.helper.MusicPlayerRemote;
 import com.kabouzeid.gramophone.helper.MusicProgressViewUpdateHelper;
 import com.kabouzeid.gramophone.helper.PlayPauseButtonOnClickHandler;
 import com.kabouzeid.gramophone.ui.fragments.AbsMusicServiceFragment;
+import com.kabouzeid.gramophone.util.Util;
 import com.kabouzeid.gramophone.views.PlayPauseDrawable;
 
 import butterknife.BindView;
@@ -64,6 +63,11 @@ public class MiniPlayerFragment extends AbsMusicServiceFragment implements Music
         unbinder = ButterKnife.bind(this, view);
 
         view.setOnTouchListener(new FlingPlayBackController(getActivity()));
+        view.setBackgroundColor(
+                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                        : getContext().getColor(R.color.background_material_light)
+        );
+
         setUpMiniPlayer();
     }
 
@@ -81,7 +85,10 @@ public class MiniPlayerFragment extends AbsMusicServiceFragment implements Music
     private void setUpPlayPauseButton() {
         miniPlayerPlayPauseDrawable = new PlayPauseDrawable(getActivity());
         miniPlayerPlayPauseButton.setImageDrawable(miniPlayerPlayPauseDrawable);
-        miniPlayerPlayPauseButton.setColorFilter(ATHUtil.resolveColor(getActivity(), R.attr.iconColor, ThemeStore.textColorSecondary(getActivity())), PorterDuff.Mode.SRC_IN);
+        miniPlayerPlayPauseButton.setColorFilter(
+                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_light)
+                        : getContext().getColor(R.color.background_material_dark)
+        );
         miniPlayerPlayPauseButton.setOnClickListener(new PlayPauseButtonOnClickHandler());
     }
 

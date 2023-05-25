@@ -13,6 +13,7 @@ import com.crdroid.music.R;
 import com.kabouzeid.gramophone.adapter.CategoryInfoAdapter;
 import com.kabouzeid.gramophone.model.CategoryInfo;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
+import com.kabouzeid.gramophone.util.Util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,11 +42,23 @@ public class LibraryPreferenceDialog extends DialogFragment {
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
+        recyclerView.setBackgroundColor(
+                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                        : getContext().getColor(R.color.background_material_light)
+        );
 
         adapter.attachToRecyclerView(recyclerView);
 
         return new MaterialDialog.Builder(getContext())
                 .title(R.string.library_categories)
+                .titleColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                : getContext().getColor(R.color.md_light_primary_text)
+                )
+                .backgroundColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                                : getContext().getColor(R.color.background_material_light)
+                )
                 .customView(view, false)
                 .positiveText(android.R.string.ok)
                 .negativeText(android.R.string.cancel)

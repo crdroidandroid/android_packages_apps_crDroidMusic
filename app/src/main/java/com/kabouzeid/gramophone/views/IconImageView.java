@@ -1,12 +1,11 @@
 package com.kabouzeid.gramophone.views;
 
 import android.content.Context;
-import android.graphics.PorterDuff;
 import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
-import com.kabouzeid.appthemehelper.util.ATHUtil;
 import com.crdroid.music.R;
+import com.kabouzeid.gramophone.util.Util;
 
 /**
  * @author Karim Abou Zeid (kabouzeid)
@@ -29,6 +28,9 @@ public class IconImageView extends AppCompatImageView {
 
     private void init(Context context) {
         if (context == null) return;
-        setColorFilter(ATHUtil.resolveColor(context, R.attr.iconColor), PorterDuff.Mode.SRC_IN);
+        setColorFilter(
+                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_light)
+                        : getContext().getColor(R.color.background_material_dark)
+        );
     }
 }

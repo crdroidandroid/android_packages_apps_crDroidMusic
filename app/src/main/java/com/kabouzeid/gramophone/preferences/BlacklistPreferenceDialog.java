@@ -11,6 +11,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.crdroid.music.R;
 import com.kabouzeid.gramophone.dialogs.BlacklistFolderChooserDialog;
 import com.kabouzeid.gramophone.provider.BlacklistStore;
+import com.kabouzeid.gramophone.util.Util;
 
 import java.io.File;
 import java.util.List;
@@ -37,14 +38,38 @@ public class BlacklistPreferenceDialog extends DialogFragment implements Blackli
         refreshBlacklistData();
         return new MaterialDialog.Builder(getContext())
                 .title(R.string.blacklist)
+                .titleColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                : getContext().getColor(R.color.md_light_primary_text)
+                )
+                .backgroundColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                                : getContext().getColor(R.color.background_material_light)
+                )
                 .positiveText(android.R.string.ok)
                 .neutralText(R.string.clear_action)
                 .negativeText(R.string.add_action)
                 .items(paths)
+                .itemsColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                : getContext().getColor(R.color.md_light_primary_text)
+                )
                 .autoDismiss(false)
                 .itemsCallback((materialDialog, view, i, charSequence) -> new MaterialDialog.Builder(getContext())
                         .title(R.string.remove_from_blacklist)
+                        .titleColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                        : getContext().getColor(R.color.md_light_primary_text)
+                        )
+                        .backgroundColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                                        : getContext().getColor(R.color.background_material_light)
+                        )
                         .content(Html.fromHtml(getString(R.string.do_you_want_to_remove_from_the_blacklist, charSequence)))
+                        .contentColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                        : getContext().getColor(R.color.md_light_primary_text)
+                        )
                         .positiveText(R.string.remove_action)
                         .negativeText(android.R.string.cancel)
                         .onPositive((materialDialog12, dialogAction) -> {
@@ -54,7 +79,19 @@ public class BlacklistPreferenceDialog extends DialogFragment implements Blackli
                 // clear
                 .onNeutral((materialDialog, dialogAction) -> new MaterialDialog.Builder(getContext())
                         .title(R.string.clear_blacklist)
+                        .titleColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                        : getContext().getColor(R.color.md_light_primary_text)
+                        )
+                        .backgroundColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.background_material_dark)
+                                        : getContext().getColor(R.color.background_material_light)
+                        )
                         .content(R.string.do_you_want_to_clear_the_blacklist)
+                        .contentColor(
+                                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(R.color.md_dark_primary_text)
+                                        : getContext().getColor(R.color.md_light_primary_text)
+                        )
                         .positiveText(R.string.clear_action)
                         .negativeText(android.R.string.cancel)
                         .onPositive((materialDialog1, dialogAction1) -> {

@@ -1,5 +1,7 @@
 package com.kabouzeid.gramophone.preferences;
 
+import static com.crdroid.music.R.*;
+
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
@@ -21,6 +23,7 @@ import com.heinrichreimersoftware.materialintro.view.InkPageIndicator;
 import com.crdroid.music.R;
 import com.kabouzeid.gramophone.ui.fragments.player.NowPlayingScreen;
 import com.kabouzeid.gramophone.util.PreferenceUtil;
+import com.kabouzeid.gramophone.util.Util;
 import com.kabouzeid.gramophone.util.ViewUtil;
 
 /**
@@ -38,19 +41,31 @@ public class NowPlayingScreenPreferenceDialog extends DialogFragment implements 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        @SuppressLint("InflateParams") View view = LayoutInflater.from(getContext()).inflate(R.layout.preference_dialog_now_playing_screen, null);
-        ViewPager viewPager = view.findViewById(R.id.now_playing_screen_view_pager);
+        @SuppressLint("InflateParams") View view = LayoutInflater.from(getContext()).inflate(layout.preference_dialog_now_playing_screen, null);
+        ViewPager viewPager = view.findViewById(id.now_playing_screen_view_pager);
         viewPager.setAdapter(new NowPlayingScreenAdapter(getContext()));
         viewPager.addOnPageChangeListener(this);
         viewPager.setPageMargin((int) ViewUtil.convertDpToPixel(32, getResources()));
         viewPager.setCurrentItem(PreferenceUtil.getInstance(getContext()).getNowPlayingScreen().ordinal());
+        viewPager.setBackgroundColor(
+                Util.isDarkModeEnabled(getContext()) ? getContext().getColor(color.background_material_dark)
+                        : getContext().getColor(color.background_material_light)
+        );
 
-        InkPageIndicator pageIndicator = view.findViewById(R.id.page_indicator);
+        InkPageIndicator pageIndicator = view.findViewById(id.page_indicator);
         pageIndicator.setViewPager(viewPager);
         pageIndicator.onPageSelected(viewPager.getCurrentItem());
 
         return new MaterialDialog.Builder(getContext())
-                .title(R.string.pref_title_now_playing_screen_appearance)
+                .title(string.pref_title_now_playing_screen_appearance)
+                .titleColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(color.md_dark_primary_text)
+                                : getContext().getColor(color.md_light_primary_text)
+                )
+                .backgroundColor(
+                        Util.isDarkModeEnabled(getContext()) ? getContext().getColor(color.background_material_dark)
+                                : getContext().getColor(color.background_material_light)
+                )
                 .positiveText(android.R.string.ok)
                 .negativeText(android.R.string.cancel)
                 .onAny(this)
@@ -103,8 +118,8 @@ public class NowPlayingScreenPreferenceDialog extends DialogFragment implements 
             ViewGroup layout = (ViewGroup) inflater.inflate(R.layout.preference_now_playing_screen_item, collection, false);
             collection.addView(layout);
 
-            ImageView image = layout.findViewById(R.id.image);
-            TextView title = layout.findViewById(R.id.title);
+            ImageView image = layout.findViewById(id.image);
+            TextView title = layout.findViewById(id.title);
             image.setImageResource(nowPlayingScreen.drawableResId);
             title.setText(nowPlayingScreen.titleRes);
 

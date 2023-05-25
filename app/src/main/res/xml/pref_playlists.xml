@@ -3,7 +3,7 @@
 
     <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory android:title="@string/pref_header_playlists">
 
-        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEListPreference
+        <ListPreference
             app:iconSpaceReserved="false"
             android:defaultValue="this_month"
             android:entries="@array/pref_playlists_last_added_interval_titles"
