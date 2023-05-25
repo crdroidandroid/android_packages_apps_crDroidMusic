@@ -30,6 +30,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Phonograph.Light"
         android:requestLegacyExternalStorage="true"
+        android:enableOnBackInvokedCallback="true"
         tools:ignore="UnusedAttribute">
         <activity android:name="com.kabouzeid.gramophone.ui.activities.MainActivity"
             android:exported="true">
