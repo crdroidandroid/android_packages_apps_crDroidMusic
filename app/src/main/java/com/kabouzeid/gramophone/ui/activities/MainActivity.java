@@ -6,8 +6,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,6 +57,7 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     public static final int APP_INTRO_REQUEST = 100;
+    public static final int STORAGE_PERMISSION_REQUEST = 123;
 
     private static final int LIBRARY = 0;
     private static final int FOLDERS = 1;
@@ -127,7 +130,13 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
 
     @Override
     protected void requestPermissions() {
-        if (!blockRequestPermissions) super.requestPermissions();
+        if (!blockRequestPermissions) {
+            if (!Environment.isExternalStorageManager()) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                startActivityForResult(intent, STORAGE_PERMISSION_REQUEST);
+            }
+            super.requestPermissions();
+        }
     }
 
     @Override
